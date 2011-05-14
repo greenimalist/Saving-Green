@@ -12,6 +12,7 @@
 		0E81A8C8137E7F2000D9059A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E81A8C7137E7F2000D9059A /* QuartzCore.framework */; };
 		0E9B2370137E90A700107133 /* CorePlotTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E9B236E137E90A700107133 /* CorePlotTestController.m */; };
 		0E9B2371137E90A700107133 /* CorePlotTestController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0E9B236F137E90A700107133 /* CorePlotTestController.xib */; };
+		A9391FAD137EAE11007B4F72 /* CorePlot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9391FAC137EAE11007B4F72 /* CorePlot.framework */; };
 		A9FA5662137E6B3000CC9474 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9FA5661137E6B3000CC9474 /* Cocoa.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		A9FA566C137E6B3000CC9474 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A9FA566A137E6B3000CC9474 /* InfoPlist.strings */; };
 		A9FA566F137E6B3000CC9474 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A9FA566E137E6B3000CC9474 /* main.m */; };
@@ -25,23 +26,23 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		0E81A8BB137E7CFC00D9059A /* PBXContainerItemProxy */ = {
+		A9391EC8137EA1D5007B4F72 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 0E81A8B2137E7CFB00D9059A /* CorePlot.xcodeproj */;
+			containerPortal = A9391EBF137EA1D5007B4F72 /* CorePlot.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 8DC2EF5B0486A6940098B216;
 			remoteInfo = CorePlot;
 		};
-		0E81A8BD137E7CFC00D9059A /* PBXContainerItemProxy */ = {
+		A9391ECA137EA1D5007B4F72 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 0E81A8B2137E7CFB00D9059A /* CorePlot.xcodeproj */;
+			containerPortal = A9391EBF137EA1D5007B4F72 /* CorePlot.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 0730F600109492D800E95162;
 			remoteInfo = UnitTests;
 		};
-		0E81A8C0137E7E6300D9059A /* PBXContainerItemProxy */ = {
+		A9391ECC137EA208007B4F72 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 0E81A8B2137E7CFB00D9059A /* CorePlot.xcodeproj */;
+			containerPortal = A9391EBF137EA1D5007B4F72 /* CorePlot.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = 8DC2EF4F0486A6940098B216;
 			remoteInfo = CorePlot;
@@ -71,11 +72,12 @@
 		0E81A8AC137E718300D9059A /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 		0E81A8AF137E72E500D9059A /* EnergyBuster.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnergyBuster.h; sourceTree = "<group>"; };
 		0E81A8B0137E72E500D9059A /* EnergyBuster.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnergyBuster.m; sourceTree = "<group>"; };
-		0E81A8B2137E7CFB00D9059A /* CorePlot.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CorePlot.xcodeproj; path = "../CorePlotInstall_0.3/Source Code/framework/CorePlot.xcodeproj"; sourceTree = "<group>"; };
 		0E81A8C7137E7F2000D9059A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		0E9B236D137E90A700107133 /* CorePlotTestController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CorePlotTestController.h; sourceTree = "<group>"; };
 		0E9B236E137E90A700107133 /* CorePlotTestController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CorePlotTestController.m; sourceTree = "<group>"; };
 		0E9B236F137E90A700107133 /* CorePlotTestController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CorePlotTestController.xib; sourceTree = "<group>"; };
+		A9391EBF137EA1D5007B4F72 /* CorePlot.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CorePlot.xcodeproj; path = CorePlotSource/framework/CorePlot.xcodeproj; sourceTree = "<group>"; };
+		A9391FAC137EAE11007B4F72 /* CorePlot.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CorePlot.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9FA565D137E6B3000CC9474 /* EnergySaver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EnergySaver.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9FA5661137E6B3000CC9474 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		A9FA5664137E6B3000CC9474 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -104,6 +106,7 @@
 			files = (
 				0E81A8C8137E7F2000D9059A /* QuartzCore.framework in Frameworks */,
 				A9FA5662137E6B3000CC9474 /* Cocoa.framework in Frameworks */,
+				A9391FAD137EAE11007B4F72 /* CorePlot.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,11 +121,11 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0E81A8B3137E7CFB00D9059A /* Products */ = {
+		A9391EC0137EA1D5007B4F72 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0E81A8BC137E7CFC00D9059A /* CorePlot.framework */,
-				0E81A8BE137E7CFC00D9059A /* UnitTests.octest */,
+				A9391EC9137EA1D5007B4F72 /* CorePlot.framework */,
+				A9391ECB137EA1D5007B4F72 /* UnitTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -131,8 +134,9 @@
 			isa = PBXGroup;
 			children = (
 				0E81A8C7137E7F2000D9059A /* QuartzCore.framework */,
-				0E81A8B2137E7CFB00D9059A /* CorePlot.xcodeproj */,
 				0E81A8AC137E718300D9059A /* README */,
+				A9391FAC137EAE11007B4F72 /* CorePlot.framework */,
+				A9391EBF137EA1D5007B4F72 /* CorePlot.xcodeproj */,
 				A9FA5667137E6B3000CC9474 /* EnergySaver */,
 				A9FA5682137E6B3100CC9474 /* EnergySaverTests */,
 				A9FA5660137E6B3000CC9474 /* Frameworks */,
@@ -231,7 +235,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				0E81A8C1137E7E6300D9059A /* PBXTargetDependency */,
+				A9391ECD137EA208007B4F72 /* PBXTargetDependency */,
 			);
 			name = EnergySaver;
 			productName = EnergySaver;
@@ -274,8 +278,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 0E81A8B3137E7CFB00D9059A /* Products */;
-					ProjectRef = 0E81A8B2137E7CFB00D9059A /* CorePlot.xcodeproj */;
+					ProductGroup = A9391EC0137EA1D5007B4F72 /* Products */;
+					ProjectRef = A9391EBF137EA1D5007B4F72 /* CorePlot.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -287,18 +291,18 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		0E81A8BC137E7CFC00D9059A /* CorePlot.framework */ = {
+		A9391EC9137EA1D5007B4F72 /* CorePlot.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = CorePlot.framework;
-			remoteRef = 0E81A8BB137E7CFC00D9059A /* PBXContainerItemProxy */;
+			remoteRef = A9391EC8137EA1D5007B4F72 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		0E81A8BE137E7CFC00D9059A /* UnitTests.octest */ = {
+		A9391ECB137EA1D5007B4F72 /* UnitTests.octest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = UnitTests.octest;
-			remoteRef = 0E81A8BD137E7CFC00D9059A /* PBXContainerItemProxy */;
+			remoteRef = A9391ECA137EA1D5007B4F72 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -366,10 +370,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		0E81A8C1137E7E6300D9059A /* PBXTargetDependency */ = {
+		A9391ECD137EA208007B4F72 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = CorePlot;
-			targetProxy = 0E81A8C0137E7E6300D9059A /* PBXContainerItemProxy */;
+			targetProxy = A9391ECC137EA208007B4F72 /* PBXContainerItemProxy */;
 		};
 		A9FA5681137E6B3100CC9474 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
