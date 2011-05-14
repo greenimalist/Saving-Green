@@ -7,10 +7,10 @@
 //
 
 #import <Cocoa/Cocoa.h>
-#import "CorePlot/CorePlot.h"
+#import <CorePlot/CorePlot.h>
 
-@interface CorePlotTestController : NSViewController <CPPlotDataSource> {
-    
+@interface CorePlotTestController : NSWindowController <CPPlotDataSource> {
+   	IBOutlet CPLayerHostingView *graphView;
     CPXYGraph *graph;
     
 @private
