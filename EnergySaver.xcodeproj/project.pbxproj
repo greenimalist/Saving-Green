@@ -1,0 +1,456 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A9FA5662137E6B3000CC9474 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9FA5661137E6B3000CC9474 /* Cocoa.framework */; };
+		A9FA566C137E6B3000CC9474 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A9FA566A137E6B3000CC9474 /* InfoPlist.strings */; };
+		A9FA566F137E6B3000CC9474 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A9FA566E137E6B3000CC9474 /* main.m */; };
+		A9FA5672137E6B3000CC9474 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = A9FA5670137E6B3000CC9474 /* Credits.rtf */; };
+		A9FA5675137E6B3000CC9474 /* EnergySaverAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A9FA5674137E6B3000CC9474 /* EnergySaverAppDelegate.m */; };
+		A9FA5678137E6B3100CC9474 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9FA5676137E6B3100CC9474 /* MainMenu.xib */; };
+		A9FA567F137E6B3100CC9474 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9FA5661137E6B3000CC9474 /* Cocoa.framework */; };
+		A9FA5687137E6B3100CC9474 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A9FA5685137E6B3100CC9474 /* InfoPlist.strings */; };
+		A9FA568A137E6B3100CC9474 /* EnergySaverTests.h in Resources */ = {isa = PBXBuildFile; fileRef = A9FA5689137E6B3100CC9474 /* EnergySaverTests.h */; };
+		A9FA568C137E6B3100CC9474 /* EnergySaverTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A9FA568B137E6B3100CC9474 /* EnergySaverTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A9FA5680137E6B3100CC9474 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A9FA5654137E6B3000CC9474 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A9FA565C137E6B3000CC9474;
+			remoteInfo = EnergySaver;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A9FA565D137E6B3000CC9474 /* EnergySaver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EnergySaver.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9FA5661137E6B3000CC9474 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		A9FA5664137E6B3000CC9474 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		A9FA5665137E6B3000CC9474 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		A9FA5666137E6B3000CC9474 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A9FA5669137E6B3000CC9474 /* EnergySaver-Info.plist */ = {isa = PBXFileReference; path = "EnergySaver-Info.plist"; sourceTree = "<group>"; };
+		A9FA566B137E6B3000CC9474 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A9FA566D137E6B3000CC9474 /* EnergySaver-Prefix.pch */ = {isa = PBXFileReference; path = "EnergySaver-Prefix.pch"; sourceTree = "<group>"; };
+		A9FA566E137E6B3000CC9474 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A9FA5671137E6B3000CC9474 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		A9FA5673137E6B3000CC9474 /* EnergySaverAppDelegate.h */ = {isa = PBXFileReference; path = EnergySaverAppDelegate.h; sourceTree = "<group>"; };
+		A9FA5674137E6B3000CC9474 /* EnergySaverAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EnergySaverAppDelegate.m; sourceTree = "<group>"; };
+		A9FA5677137E6B3100CC9474 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		A9FA567E137E6B3100CC9474 /* EnergySaverTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EnergySaverTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9FA5684137E6B3100CC9474 /* EnergySaverTests-Info.plist */ = {isa = PBXFileReference; path = "EnergySaverTests-Info.plist"; sourceTree = "<group>"; };
+		A9FA5686137E6B3100CC9474 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A9FA5688137E6B3100CC9474 /* EnergySaverTests-Prefix.pch */ = {isa = PBXFileReference; path = "EnergySaverTests-Prefix.pch"; sourceTree = "<group>"; };
+		A9FA5689137E6B3100CC9474 /* EnergySaverTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EnergySaverTests.h; sourceTree = "<group>"; };
+		A9FA568B137E6B3100CC9474 /* EnergySaverTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EnergySaverTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A9FA565A137E6B3000CC9474 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9FA5662137E6B3000CC9474 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9FA567A137E6B3100CC9474 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9FA567F137E6B3100CC9474 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A9FA5652137E6B3000CC9474 = {
+			isa = PBXGroup;
+			children = (
+				A9FA5667137E6B3000CC9474 /* EnergySaver */,
+				A9FA5682137E6B3100CC9474 /* EnergySaverTests */,
+				A9FA5660137E6B3000CC9474 /* Frameworks */,
+				A9FA565E137E6B3000CC9474 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A9FA565E137E6B3000CC9474 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A9FA565D137E6B3000CC9474 /* EnergySaver.app */,
+				A9FA567E137E6B3100CC9474 /* EnergySaverTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A9FA5660137E6B3000CC9474 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A9FA5661137E6B3000CC9474 /* Cocoa.framework */,
+				A9FA5663137E6B3000CC9474 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A9FA5663137E6B3000CC9474 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A9FA5664137E6B3000CC9474 /* AppKit.framework */,
+				A9FA5665137E6B3000CC9474 /* CoreData.framework */,
+				A9FA5666137E6B3000CC9474 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		A9FA5667137E6B3000CC9474 /* EnergySaver */ = {
+			isa = PBXGroup;
+			children = (
+				A9FA5673137E6B3000CC9474 /* EnergySaverAppDelegate.h */,
+				A9FA5674137E6B3000CC9474 /* EnergySaverAppDelegate.m */,
+				A9FA5676137E6B3100CC9474 /* MainMenu.xib */,
+				A9FA5668137E6B3000CC9474 /* Supporting Files */,
+			);
+			path = EnergySaver;
+			sourceTree = "<group>";
+		};
+		A9FA5668137E6B3000CC9474 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A9FA5669137E6B3000CC9474 /* EnergySaver-Info.plist */,
+				A9FA566A137E6B3000CC9474 /* InfoPlist.strings */,
+				A9FA566D137E6B3000CC9474 /* EnergySaver-Prefix.pch */,
+				A9FA566E137E6B3000CC9474 /* main.m */,
+				A9FA5670137E6B3000CC9474 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A9FA5682137E6B3100CC9474 /* EnergySaverTests */ = {
+			isa = PBXGroup;
+			children = (
+				A9FA5689137E6B3100CC9474 /* EnergySaverTests.h */,
+				A9FA568B137E6B3100CC9474 /* EnergySaverTests.m */,
+				A9FA5683137E6B3100CC9474 /* Supporting Files */,
+			);
+			path = EnergySaverTests;
+			sourceTree = "<group>";
+		};
+		A9FA5683137E6B3100CC9474 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A9FA5684137E6B3100CC9474 /* EnergySaverTests-Info.plist */,
+				A9FA5685137E6B3100CC9474 /* InfoPlist.strings */,
+				A9FA5688137E6B3100CC9474 /* EnergySaverTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A9FA565C137E6B3000CC9474 /* EnergySaver */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9FA568F137E6B3100CC9474 /* Build configuration list for PBXNativeTarget "EnergySaver" */;
+			buildPhases = (
+				A9FA5659137E6B3000CC9474 /* Sources */,
+				A9FA565A137E6B3000CC9474 /* Frameworks */,
+				A9FA565B137E6B3000CC9474 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EnergySaver;
+			productName = EnergySaver;
+			productReference = A9FA565D137E6B3000CC9474 /* EnergySaver.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A9FA567D137E6B3100CC9474 /* EnergySaverTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9FA5692137E6B3100CC9474 /* Build configuration list for PBXNativeTarget "EnergySaverTests" */;
+			buildPhases = (
+				A9FA5679137E6B3100CC9474 /* Sources */,
+				A9FA567A137E6B3100CC9474 /* Frameworks */,
+				A9FA567B137E6B3100CC9474 /* Resources */,
+				A9FA567C137E6B3100CC9474 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A9FA5681137E6B3100CC9474 /* PBXTargetDependency */,
+			);
+			name = EnergySaverTests;
+			productName = EnergySaverTests;
+			productReference = A9FA567E137E6B3100CC9474 /* EnergySaverTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A9FA5654137E6B3000CC9474 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = A9FA5657137E6B3000CC9474 /* Build configuration list for PBXProject "EnergySaver" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A9FA5652137E6B3000CC9474;
+			productRefGroup = A9FA565E137E6B3000CC9474 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A9FA565C137E6B3000CC9474 /* EnergySaver */,
+				A9FA567D137E6B3100CC9474 /* EnergySaverTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A9FA565B137E6B3000CC9474 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9FA566C137E6B3000CC9474 /* InfoPlist.strings in Resources */,
+				A9FA5672137E6B3000CC9474 /* Credits.rtf in Resources */,
+				A9FA5678137E6B3100CC9474 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9FA567B137E6B3100CC9474 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9FA5687137E6B3100CC9474 /* InfoPlist.strings in Resources */,
+				A9FA568A137E6B3100CC9474 /* EnergySaverTests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A9FA567C137E6B3100CC9474 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A9FA5659137E6B3000CC9474 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9FA566F137E6B3000CC9474 /* main.m in Sources */,
+				A9FA5675137E6B3000CC9474 /* EnergySaverAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9FA5679137E6B3100CC9474 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9FA568C137E6B3100CC9474 /* EnergySaverTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A9FA5681137E6B3100CC9474 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A9FA565C137E6B3000CC9474 /* EnergySaver */;
+			targetProxy = A9FA5680137E6B3100CC9474 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A9FA566A137E6B3000CC9474 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A9FA566B137E6B3000CC9474 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		A9FA5670137E6B3000CC9474 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A9FA5671137E6B3000CC9474 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		A9FA5676137E6B3100CC9474 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A9FA5677137E6B3100CC9474 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		A9FA5685137E6B3100CC9474 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A9FA5686137E6B3100CC9474 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A9FA568D137E6B3100CC9474 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		A9FA568E137E6B3100CC9474 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		A9FA5690137E6B3100CC9474 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EnergySaver/EnergySaver-Prefix.pch";
+				INFOPLIST_FILE = "EnergySaver/EnergySaver-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		A9FA5691137E6B3100CC9474 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EnergySaver/EnergySaver-Prefix.pch";
+				INFOPLIST_FILE = "EnergySaver/EnergySaver-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		A9FA5693137E6B3100CC9474 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/EnergySaver.app/Contents/MacOS/EnergySaver";
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EnergySaverTests/EnergySaverTests-Prefix.pch";
+				INFOPLIST_FILE = "EnergySaverTests/EnergySaverTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		A9FA5694137E6B3100CC9474 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/EnergySaver.app/Contents/MacOS/EnergySaver";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EnergySaverTests/EnergySaverTests-Prefix.pch";
+				INFOPLIST_FILE = "EnergySaverTests/EnergySaverTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A9FA5657137E6B3000CC9474 /* Build configuration list for PBXProject "EnergySaver" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9FA568D137E6B3100CC9474 /* Debug */,
+				A9FA568E137E6B3100CC9474 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A9FA568F137E6B3100CC9474 /* Build configuration list for PBXNativeTarget "EnergySaver" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9FA5690137E6B3100CC9474 /* Debug */,
+				A9FA5691137E6B3100CC9474 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A9FA5692137E6B3100CC9474 /* Build configuration list for PBXNativeTarget "EnergySaverTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9FA5693137E6B3100CC9474 /* Debug */,
+				A9FA5694137E6B3100CC9474 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A9FA5654137E6B3000CC9474 /* Project object */;
+}
