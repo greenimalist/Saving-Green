@@ -28,13 +28,13 @@
     NSDate *startDate; // when first implemented
     
 
-@private
+//@private
     
 }
 
-- (int) savedToday; // The amount of money saved today, in cents
-- (int) totalSaved; // The amount of money saved in total, in cents
+//- (int) savedToday; // The amount of money saved today, in cents
+//- (int) totalSaved; // The amount of money saved in total, in cents
     
-}
+//}
 
 @end

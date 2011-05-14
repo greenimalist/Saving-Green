@@ -7,6 +7,7 @@
 //
 
 #import "EnergySaverAppDelegate.h"
+#import <CorePlot/CorePlot.h>
 
 @implementation EnergySaverAppDelegate
 
