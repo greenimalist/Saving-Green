@@ -12,22 +12,28 @@
 @interface EnergyBuster : NSObject {
 
     NSString *title;
-    NSString *description;
-    NSString *choice;
+    NSString *description; // how-to implement EnergyBuster
+    NSString *choice; // Interested in trying? Yes, No, Later
     
+    NSURL *graphicURL; // link to picture for each EnergyBuster
     
-    int savedPerInstance;
+    int savedPerInstance; // in cents
     int instancesPerMonth;
-    int savedPerMonth;
+    int savedPerMonth; // in cents
     int setupCost;
-    int ongoingCost;
+    int ongoingCost; // cost per use
     NSTimeInterval setupTime;
-    NSTimeInterval ongoingTime;
+    NSTimeInterval ongoingTime; // time per use
     
-    NSDate *startDate;
+    NSDate *startDate; // when first implemented
     
 
 @private
+    
+}
+
+- (int) savedToday; // The amount of money saved today, in cents
+- (int) totalSaved; // The amount of money saved in total, in cents
     
 }
 
