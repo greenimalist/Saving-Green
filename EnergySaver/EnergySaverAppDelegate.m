@@ -8,6 +8,7 @@
 
 #import "EnergySaverAppDelegate.h"
 #import <CorePlot/CorePlot.h>
+#import "CorePlotTestController.h"
 
 @implementation EnergySaverAppDelegate
 
@@ -16,6 +17,8 @@
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
     // Insert code here to initialize your application
+    CorePlotTestController *controller = [[CorePlotTestController alloc] initWithNibName:@"CorePlotTestController" bundle:nil];
+    [window setContentView: [controller view]];
 }
 
 @end
