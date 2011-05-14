@@ -35,18 +35,18 @@
 		A9FA5664137E6B3000CC9474 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		A9FA5665137E6B3000CC9474 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		A9FA5666137E6B3000CC9474 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		A9FA5669137E6B3000CC9474 /* EnergySaver-Info.plist */ = {isa = PBXFileReference; path = "EnergySaver-Info.plist"; sourceTree = "<group>"; };
+		A9FA5669137E6B3000CC9474 /* EnergySaver-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EnergySaver-Info.plist"; sourceTree = "<group>"; };
 		A9FA566B137E6B3000CC9474 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		A9FA566D137E6B3000CC9474 /* EnergySaver-Prefix.pch */ = {isa = PBXFileReference; path = "EnergySaver-Prefix.pch"; sourceTree = "<group>"; };
+		A9FA566D137E6B3000CC9474 /* EnergySaver-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EnergySaver-Prefix.pch"; sourceTree = "<group>"; };
 		A9FA566E137E6B3000CC9474 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A9FA5671137E6B3000CC9474 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
-		A9FA5673137E6B3000CC9474 /* EnergySaverAppDelegate.h */ = {isa = PBXFileReference; path = EnergySaverAppDelegate.h; sourceTree = "<group>"; };
+		A9FA5673137E6B3000CC9474 /* EnergySaverAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EnergySaverAppDelegate.h; sourceTree = "<group>"; };
 		A9FA5674137E6B3000CC9474 /* EnergySaverAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EnergySaverAppDelegate.m; sourceTree = "<group>"; };
 		A9FA5677137E6B3100CC9474 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		A9FA567E137E6B3100CC9474 /* EnergySaverTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EnergySaverTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A9FA5684137E6B3100CC9474 /* EnergySaverTests-Info.plist */ = {isa = PBXFileReference; path = "EnergySaverTests-Info.plist"; sourceTree = "<group>"; };
+		A9FA5684137E6B3100CC9474 /* EnergySaverTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EnergySaverTests-Info.plist"; sourceTree = "<group>"; };
 		A9FA5686137E6B3100CC9474 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		A9FA5688137E6B3100CC9474 /* EnergySaverTests-Prefix.pch */ = {isa = PBXFileReference; path = "EnergySaverTests-Prefix.pch"; sourceTree = "<group>"; };
+		A9FA5688137E6B3100CC9474 /* EnergySaverTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EnergySaverTests-Prefix.pch"; sourceTree = "<group>"; };
 		A9FA5689137E6B3100CC9474 /* EnergySaverTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EnergySaverTests.h; sourceTree = "<group>"; };
 		A9FA568B137E6B3100CC9474 /* EnergySaverTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EnergySaverTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
