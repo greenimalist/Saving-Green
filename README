@@ -1,0 +1,24 @@
+Class EnergyBuster
+
+IVars
+=====
+
+NSString - Title
+
+int - SetupCost
+NSTimeInterval - SetupTime
+int - OngoingCost
+NSTimeInterval (seconds) - OngoingTime
+
+NSString - description
+NSDate - startDate
+NSString - choice
+int - savedPerInstance
+int - instancesPerMonth
+int - savedPerMonth
+NSURL - image
+
+Methods
+=====
+
+
