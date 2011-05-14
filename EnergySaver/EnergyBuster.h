@@ -14,14 +14,15 @@
     NSString *title;
     NSString *description; // how-to implement EnergyBuster
     NSString *choice; // Interested in trying? Yes, No, Later
+    NSString *eventName;
     
     NSURL *graphicURL; // link to picture for each EnergyBuster
     
-    int savedPerInstance; // in cents
-    int instancesPerMonth;
+    int savingsPerEvent; // in cents
+    int eventsPerMonth;
     int savedPerMonth; // in cents
     int setupCost;
-    int ongoingCost; // cost per use
+    
     NSTimeInterval setupTime;
     NSTimeInterval ongoingTime; // time per use
     
