@@ -20,11 +20,11 @@
     
     int savingsPerEvent; // in cents
     int eventsPerMonth;
-    int savedPerMonth; // in cents
-    int setupCost;
+    int savingsPerMonth; // in cents
+    int setupCost; // in cents
     
-    NSTimeInterval setupTime;
-    NSTimeInterval ongoingTime; // time per use
+    int setupTime; // in seconds
+    int ongoingTime; // in seconds, per event
     
     NSDate *startDate; // when first implemented
     
