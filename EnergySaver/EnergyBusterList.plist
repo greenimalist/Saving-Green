@@ -5,8 +5,6 @@
 	<key>EnergyBusterArray</key>
 	<array>
 		<dict>
-			<key>Title</key>
-			<string>Space Heater</string>
 			<key>Choice</key>
 			<string>Later</string>
 			<key>Description</key>
@@ -27,10 +25,10 @@
 			<integer>2500</integer>
 			<key>Setup Time</key>
 			<integer>1800</integer>
+			<key>Title</key>
+			<string>Space Heater</string>
 		</dict>
 		<dict>
-			<key>Title</key>
-			<string>Ceiling Fan</string>
 			<key>Description</key>
 			<string>By using a ceiling fan instead of air conditioning, you&apos;ll stay cool without burning money.</string>
 			<key>Event Name</key>
@@ -49,10 +47,10 @@
 			<integer>100</integer>
 			<key>Setup Time</key>
 			<integer>14400</integer>
+			<key>Title</key>
+			<string>Ceiling Fan</string>
 		</dict>
 		<dict>
-			<key>Title</key>
-			<string>Turn Off Lights</string>
 			<key>Description</key>
 			<string>Simply by flicking the electric switch, you can conserve electricity -- and money.</string>
 			<key>Event Name</key>
@@ -71,10 +69,10 @@
 			<integer>0</integer>
 			<key>Setup Time</key>
 			<integer>0</integer>
+			<key>Title</key>
+			<string>Turn Off Lights</string>
 		</dict>
 		<dict>
-			<key>Title</key>
-			<string>Hang Dry Laundry</string>
 			<key>Description</key>
 			<string>Use a clothesline or drying rack to save heating costs while also helping clothes last longer.</string>
 			<key>Event Name</key>
@@ -93,10 +91,10 @@
 			<integer>2000</integer>
 			<key>Setup Time</key>
 			<integer>3600</integer>
+			<key>Title</key>
+			<string>Hang Dry Laundry</string>
 		</dict>
 		<dict>
-			<key>Title</key>
-			<string>Sleep Your Computer</string>
 			<key>Description</key>
 			<string>Inactive computer? Put both it and the monitor to sleep.</string>
 			<key>Event Name</key>
@@ -115,6 +113,74 @@
 			<integer>0</integer>
 			<key>Setup Time</key>
 			<integer>0</integer>
+			<key>Title</key>
+			<string>Sleep Your Computer</string>
+		</dict>
+		<dict>
+			<key>Description</key>
+			<string>CFLs are 5x more efficient than Incadescents. You can often get them for free.</string>
+			<key>Event Name</key>
+			<string>Hour</string>
+			<key>Events Per Month</key>
+			<integer>372</integer>
+			<key>Graphic URL</key>
+			<string>http://farm1.static.flickr.com/136/368529017_9e1f64b189.jpg</string>
+			<key>Ongoing Time</key>
+			<integer>0</integer>
+			<key>Savings Per Event</key>
+			<integer>5</integer>
+			<key>Savings Per Month</key>
+			<integer>2072</integer>
+			<key>Setup Cost</key>
+			<integer>3200</integer>
+			<key>Setup Time</key>
+			<integer>3600</integer>
+			<key>Title</key>
+			<string>Use Compact Fluorescents</string>
+		</dict>
+		<dict>
+			<key>Description</key>
+			<string>When doing laundry, use cold water. It&apos;s better for your clothes, too.</string>
+			<key>Event Name</key>
+			<string>Hour</string>
+			<key>Events Per Month</key>
+			<integer>33</integer>
+			<key>Graphic URL</key>
+			<string>http://farm4.static.flickr.com/3195/3059476212_a100cf7a55.jpg</string>
+			<key>Ongoing Time</key>
+			<integer>0</integer>
+			<key>Savings Per Event</key>
+			<integer>64</integer>
+			<key>Savings Per Month</key>
+			<integer>2112</integer>
+			<key>Setup Cost</key>
+			<integer>0</integer>
+			<key>Setup Time</key>
+			<integer>0</integer>
+			<key>Title</key>
+			<string>Use Cold Water</string>
+		</dict>
+		<dict>
+			<key>Description</key>
+			<string>You&apos;ll get an extra 5 miles per gallon if you drive at 55mph instead of 75mph.</string>
+			<key>Event Name</key>
+			<string>Hour</string>
+			<key>Events Per Month</key>
+			<integer>31</integer>
+			<key>Graphic URL</key>
+			<string>http://farm6.static.flickr.com/5263/5581417814_583516cca7.jpg</string>
+			<key>Ongoing Time</key>
+			<integer>62640</integer>
+			<key>Savings Per Event</key>
+			<integer>200</integer>
+			<key>Savings Per Month</key>
+			<integer>6200</integer>
+			<key>Setup Cost</key>
+			<integer>0</integer>
+			<key>Setup Time</key>
+			<integer>0</integer>
+			<key>Title</key>
+			<string>Drive Slower</string>
 		</dict>
 	</array>
 </dict>
