@@ -12,6 +12,7 @@
 		0E81A8C8137E7F2000D9059A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E81A8C7137E7F2000D9059A /* QuartzCore.framework */; };
 		0E9B2370137E90A700107133 /* CorePlotTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E9B236E137E90A700107133 /* CorePlotTestController.m */; };
 		0E9B2371137E90A700107133 /* CorePlotTestController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0E9B236F137E90A700107133 /* CorePlotTestController.xib */; };
+		0EAEBA91137EC2DF00968696 /* EnergyBusterList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0EAEBA90137EC2DF00968696 /* EnergyBusterList.plist */; };
 		A9391FAD137EAE11007B4F72 /* CorePlot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9391FAC137EAE11007B4F72 /* CorePlot.framework */; };
 		A9FA5662137E6B3000CC9474 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9FA5661137E6B3000CC9474 /* Cocoa.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		A9FA566C137E6B3000CC9474 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A9FA566A137E6B3000CC9474 /* InfoPlist.strings */; };
@@ -76,6 +77,7 @@
 		0E9B236D137E90A700107133 /* CorePlotTestController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CorePlotTestController.h; sourceTree = "<group>"; };
 		0E9B236E137E90A700107133 /* CorePlotTestController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CorePlotTestController.m; sourceTree = "<group>"; };
 		0E9B236F137E90A700107133 /* CorePlotTestController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CorePlotTestController.xib; sourceTree = "<group>"; };
+		0EAEBA90137EC2DF00968696 /* EnergyBusterList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = EnergyBusterList.plist; sourceTree = "<group>"; };
 		A9391EBF137EA1D5007B4F72 /* CorePlot.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CorePlot.xcodeproj; path = CorePlotSource/framework/CorePlot.xcodeproj; sourceTree = "<group>"; };
 		A9391FAC137EAE11007B4F72 /* CorePlot.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CorePlot.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9FA565D137E6B3000CC9474 /* EnergySaver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EnergySaver.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -196,6 +198,7 @@
 				A9FA566D137E6B3000CC9474 /* EnergySaver-Prefix.pch */,
 				A9FA566E137E6B3000CC9474 /* main.m */,
 				A9FA5670137E6B3000CC9474 /* Credits.rtf */,
+				0EAEBA90137EC2DF00968696 /* EnergyBusterList.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -317,6 +320,7 @@
 				A9FA5678137E6B3100CC9474 /* MainMenu.xib in Resources */,
 				0E81A8AD137E718300D9059A /* README in Resources */,
 				0E9B2371137E90A700107133 /* CorePlotTestController.xib in Resources */,
+				0EAEBA91137EC2DF00968696 /* EnergyBusterList.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
