@@ -10,7 +10,9 @@
 
 
 @interface EnergyBuster : NSView {
-
+    
+    IBOutlet NSTextField *titleField;
+    
     NSString *title;
     NSString *description; // how-to implement EnergyBuster
     NSString *choice; // Interested in trying? Yes, No, Later
@@ -36,6 +38,6 @@
 //- (int) savedToday; // The amount of money saved today, in cents
 //- (int) totalSaved; // The amount of money saved in total, in cents
 
-- (void)sayHello;
+- (void)load:(NSDictionary *)eb;
 
 @end

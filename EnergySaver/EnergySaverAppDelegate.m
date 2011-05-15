@@ -32,8 +32,17 @@
 //    EnergyBusterController *controller = [EnergyBusterController shared];
 //    [EnergyBusterController shared];
     
+    
+    NSString *plistPath =
+    [[NSBundle mainBundle] pathForResource:@"EnergyBusterList"
+                                    ofType:@"plist"];
+    NSDictionary *plistContents =
+    [NSDictionary dictionaryWithContentsOfFile:plistPath];
+    
+    NSArray *array = [plistContents objectForKey:@"EnergyBusterArray"];
+    
     EnergyBuster *eb = [window contentView];
-    [eb sayHello];
+    [eb load:[array objectAtIndex:(arc4random() % [array count])]];
 }
 
 @end

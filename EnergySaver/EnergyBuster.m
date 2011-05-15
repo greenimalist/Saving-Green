@@ -23,8 +23,9 @@
     return self;
 }
 
-- (void)sayHello {
-    NSLog(@"Hello!");
+- (void)load:(NSDictionary *)eb {
+    NSLog(@"%@", [eb objectForKey:@"Title"]);
+    [titleField setStringValue:[eb objectForKey:@"Title"]];
 }
 
 - (void)dealloc
