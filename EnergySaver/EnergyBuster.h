@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 
 
-@interface EnergyBuster : NSObject {
+@interface EnergyBuster : NSView {
 
     NSString *title;
     NSString *description; // how-to implement EnergyBuster
@@ -34,7 +34,7 @@
 
 //- (int) savedToday; // The amount of money saved today, in cents
 //- (int) totalSaved; // The amount of money saved in total, in cents
-    
-//}
+
+- (void)sayHello;
 
 @end

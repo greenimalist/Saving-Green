@@ -178,10 +178,10 @@
 				A9FA5673137E6B3000CC9474 /* EnergySaverAppDelegate.h */,
 				A9FA5674137E6B3000CC9474 /* EnergySaverAppDelegate.m */,
 				0E81A8AF137E72E500D9059A /* EnergyBuster.h */,
+				0E81A8B0137E72E500D9059A /* EnergyBuster.m */,
 				0E9B236D137E90A700107133 /* CorePlotTestController.h */,
 				0E9B236E137E90A700107133 /* CorePlotTestController.m */,
 				0E9B236F137E90A700107133 /* CorePlotTestController.xib */,
-				0E81A8B0137E72E500D9059A /* EnergyBuster.m */,
 				A9FA5676137E6B3100CC9474 /* MainMenu.xib */,
 				A9FA5668137E6B3000CC9474 /* Supporting Files */,
 			);

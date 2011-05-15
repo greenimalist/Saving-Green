@@ -23,6 +23,10 @@
     return self;
 }
 
+- (void)sayHello {
+    NSLog(@"Hello!");
+}
+
 - (void)dealloc
 {
     [super dealloc];

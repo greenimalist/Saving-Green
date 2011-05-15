@@ -9,6 +9,8 @@
 #import "EnergySaverAppDelegate.h"
 #import <CorePlot/CorePlot.h>
 #import "CorePlotTestController.h"
+//#import "EnergyBusterController.h"
+#import "EnergyBuster.h"
 
 @implementation EnergySaverAppDelegate
 
@@ -17,12 +19,21 @@
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
     // Insert code here to initialize your application
+    
 //    CorePlotTestController *controller = [[CorePlotTestController alloc] initWithNibName:@"CorePlotTestController" bundle:nil];
 //    [window setContentView: [controller view]];
     
-    CorePlotTestController *controller = [[CorePlotTestController alloc] initWithWindowNibName:@"CorePlotTestController"];
-//    [[controller window] display];
-    [controller showWindow:self];
+//    CorePlotTestController *controller = [[CorePlotTestController alloc] initWithWindowNibName:@"CorePlotTestController"];
+//    [controller showWindow:self];
+    
+//    EnergyBusterController *controller = [[EnergyBusterController alloc] initWithWindowNibName:@"EnergyBusterView"];
+//    [controller showWindow:self];
+    
+//    EnergyBusterController *controller = [EnergyBusterController shared];
+//    [EnergyBusterController shared];
+    
+    EnergyBuster *eb = [window contentView];
+    [eb sayHello];
 }
 
 @end
