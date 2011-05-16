@@ -7,10 +7,14 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import <CorePlot/CorePlot.h>
 
-@interface EnergySaverAppDelegate : NSObject <NSApplicationDelegate> {
+@interface EnergySaverAppDelegate : NSObject <NSApplicationDelegate, CPPlotDataSource> {
 @private
     NSWindow *window;
+    
+    IBOutlet CPLayerHostingView *graphView;
+    CPXYGraph *graph;
 }
 
 @property (assign) IBOutlet NSWindow *window;
