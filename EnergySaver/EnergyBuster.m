@@ -26,6 +26,33 @@
 - (void)load:(NSDictionary *)eb {
     NSLog(@"%@", [eb objectForKey:@"Title"]);
     [titleField setStringValue:[eb objectForKey:@"Title"]];
+    NSLog(@"%@", [eb objectForKey:@"Description"]);
+    [descriptionField setStringValue:[eb objectForKey:@"Description"]];
+    NSLog(@"%@", [eb objectForKey:@"Ongoing Time"]);
+    [ongoingTimeField setStringValue:[eb objectForKey:@"Ongoing Time"]];
+    NSLog(@"%@", [eb objectForKey:@"Setup Time"]);
+    [setupTimeField setStringValue:[eb objectForKey:@"Setup Time"]];
+    NSLog(@"%@", [eb objectForKey:@"Setup Cost"]);
+    [setupCostField setStringValue:[eb objectForKey:@"Setup Cost"]];
+/*    NSLog(@"%@", [eb objectForKey:@"Graphic URL"]);
+    
+    NSImage *image = [[]];
+    
+    [imageView setStringValue:[eb objectForKey:@"Graphic URL"]];
+ */
+}
+
+- (IBAction)actNow:(id) sender {
+    NSLog(@"Act Now!");
+    
+}
+
+- (IBAction)actLater:(id) sender {
+    NSLog(@"Act Later!");
+}
+
+- (IBAction)actNever:(id) sender {
+    NSLog(@"Act Never!");
 }
 
 - (void)dealloc
