@@ -47,5 +47,6 @@
 - (IBAction)actNow:(id) sender;
 - (IBAction)actLater:(id) sender;
 - (IBAction)actNever:(id) sender;
+- (void)loadDailyRate;
 
 @end

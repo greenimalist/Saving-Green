@@ -53,8 +53,27 @@
 - (IBAction)actNow:(id) sender {
     NSLog(@"Act Now!");
     
-    // TODO: Store choice
+    choice = @"Yes";
     
+    [self loadDailyRate];
+}
+
+- (IBAction)actLater:(id) sender {
+    NSLog(@"Act Later!");
+    choice = @"Later";
+    
+    [self loadDailyRate];
+}
+
+- (IBAction)actNever:(id) sender {
+    NSLog(@"Act Never!");
+    
+    choice = @"No";
+    
+    [self loadDailyRate];
+}
+
+- (void)loadDailyRate {
     // There's probably a better way to do this than repeat what the App Delegate did
     
     NSString *plistPath =
@@ -66,21 +85,16 @@
     NSArray *array = [plistContents objectForKey:@"EnergyBusterArray"];
 
     NSWindow *window = [[[NSApplication sharedApplication] delegate] window];
-    EnergyBuster *eb = [window contentView];
-    [eb load:[array objectAtIndex:(arc4random() % [array count])]];
-}
 
-- (IBAction)actLater:(id) sender {
-    NSLog(@"Act Later!");
-}
-
-- (IBAction)actNever:(id) sender {
-    NSLog(@"Act Never!");
-}
-
--(double)roi {
+    NSTabView *tabView = (NSTabView *)[[[window contentView] subviews] lastObject];
     
+    EnergyBuster *eb = (EnergyBuster *)[[[[tabView tabViewItemAtIndex:0] view] subviews] lastObject];
+    
+    [eb load:[array objectAtIndex:(arc4random() % [array count])]];
+    
+    [tabView selectTabViewItemAtIndex:1];
 }
+
 
 - (void)dealloc
 {

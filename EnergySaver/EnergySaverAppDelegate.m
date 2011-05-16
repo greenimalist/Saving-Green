@@ -41,7 +41,10 @@
     
     NSArray *array = [plistContents objectForKey:@"EnergyBusterArray"];
     
-    EnergyBuster *eb = [window contentView];
+    NSTabView *tabView = (NSTabView *)[[[window contentView] subviews] lastObject];
+
+    EnergyBuster *eb = (EnergyBuster *)[[[[tabView tabViewItemAtIndex:0] view] subviews] lastObject];
+    
     [eb load:[array objectAtIndex:(arc4random() % [array count])]];
 }
 
