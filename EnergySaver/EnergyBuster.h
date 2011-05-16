@@ -9,28 +9,24 @@
 #import <Foundation/Foundation.h>
 
 
-@interface EnergyBuster : NSView {
+@interface EnergyBuster : NSObject {
     
-    IBOutlet NSTextField *titleField;
-    IBOutlet NSTextField *descriptionField;
-    IBOutlet NSTextField *setupCostField;
-    IBOutlet NSTextField *setupTimeField;
-    IBOutlet NSTextField *ongoingTimeField;
-    IBOutlet NSImageView *imageView;
-    IBOutlet NSTextField *monthlySavingsField;
-    IBOutlet NSTextField *annualSavingsField;
     
     NSString *title;
     NSString *description; // how-to implement EnergyBuster
     NSString *choice; // Interested in trying? Yes, No, Later
+    NSString *graphicURL;
+    
     NSString *eventName;
+    int eventsPerMonth;
+
     
     int savingsPerEvent; // in cents
-    int eventsPerMonth;
     int savingsPerMonth; // in cents
-    int setupCost; // in cents
     
+    int setupCost; // in cents
     int setupTime; // in seconds
+
     int ongoingTime; // in seconds, per event
     
     NSDate *startDate; // when first implemented
@@ -43,10 +39,19 @@
 //- (int) savedToday; // The amount of money saved today, in cents
 //- (int) totalSaved; // The amount of money saved in total, in cents
 
-- (void)load:(NSDictionary *)eb;
-- (IBAction)actNow:(id) sender;
-- (IBAction)actLater:(id) sender;
-- (IBAction)actNever:(id) sender;
-- (void)loadDailyRate;
+@property (copy) NSString *title;
+@property (copy) NSString *description;
+@property (copy) NSString *choice;
+@property (copy) NSString *graphicURL;
+@property (copy) NSString *eventName;
+@property int eventsPerMonth;
+@property int savingsPerEvent;
+@property int savingsPerMonth;
+@property int setupCost;
+@property int setupTime;
+@property int ongoingTime;
+@property (copy) NSDate *startDate;
+@property (readonly) int savingsPerYear;
+
 
 @end

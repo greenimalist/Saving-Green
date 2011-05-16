@@ -10,7 +10,7 @@
 #import <CorePlot/CorePlot.h>
 #import "CorePlotTestController.h"
 //#import "EnergyBusterController.h"
-#import "EnergyBuster.h"
+#import "EnergyBusterViewController.h"
 
 @implementation EnergySaverAppDelegate
 
@@ -41,11 +41,27 @@
     
     NSArray *array = [plistContents objectForKey:@"EnergyBusterArray"];
     
-    NSTabView *tabView = (NSTabView *)[[[window contentView] subviews] lastObject];
-
-    EnergyBuster *eb = (EnergyBuster *)[[[[tabView tabViewItemAtIndex:0] view] subviews] lastObject];
+    NSDictionary *ebd = [array objectAtIndex:(arc4random() % [array count])];
+    EnergyBuster *eb = [[EnergyBuster alloc] init];
+    eb.title = [ebd objectForKey:@"Title"];
+    eb.description = [ebd objectForKey:@"Description"];
+    eb.choice = [ebd objectForKey:@"Choice"];
+    eb.graphicURL = [ebd objectForKey:@"Graphic URL"];
+    eb.eventName = [ebd objectForKey:@"Event Name"];
+    eb.savingsPerEvent = [[ebd objectForKey:@"Savings Per Event"] intValue];
+    eb.savingsPerMonth = [[ebd objectForKey:@"Savings Per Month"] intValue];
+    eb.setupCost = [[ebd objectForKey:@"Setup Cost"] intValue];
+    eb.setupTime = [[ebd objectForKey:@"Setup Time"] intValue];
+    eb.ongoingTime = [[ebd objectForKey:@"Ongoing Time"] intValue];
     
-    [eb load:[array objectAtIndex:(arc4random() % [array count])]];
+    EnergyBusterViewController *ebvc = [[EnergyBusterViewController alloc] initWithNibName:@"EnergyBusterViewController" bundle:nil];
+    
+    [ebvc load:(EnergyBuster *) eb];
+    
+    NSTabView *tabView = (NSTabView *)[[[window contentView] subviews] lastObject];
+    
+    [[[tabView tabViewItemAtIndex:0] view] addSubview:ebvc.view];
+    [tabView selectFirstTabViewItem:self];
 }
 
 @end
