@@ -7,7 +7,7 @@
 //
 
 #import "EnergyBusterViewController.h"
-
+#import "EnergySaverAppDelegate.h"
 
 @implementation EnergyBusterViewController
 
@@ -83,7 +83,7 @@
 - (void)loadDailyRate {
     [self selectNextEnergyBuster];
     
-    NSWindow *window = [[[NSApplication sharedApplication] delegate] window];
+    NSWindow *window = [(EnergySaverAppDelegate *)[[NSApplication sharedApplication] delegate] window];
     NSTabView *tabView = (NSTabView *)[[[window contentView] subviews] lastObject];
     [tabView selectTabViewItemAtIndex:1];
 }
