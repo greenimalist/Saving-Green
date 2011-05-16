@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 
 
-@interface EnergyBuster : NSObject {
+@interface EnergyBuster : NSObject <NSCoding> {
     
     
     NSString *title;
@@ -38,6 +38,8 @@
 
 //- (int) savedToday; // The amount of money saved today, in cents
 //- (int) totalSaved; // The amount of money saved in total, in cents
+
+- (void)loadDictionary:(NSDictionary *)ebd;
 
 @property (copy) NSString *title;
 @property (copy) NSString *description;

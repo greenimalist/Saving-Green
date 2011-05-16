@@ -47,16 +47,7 @@
     
     NSDictionary *ebd = [array objectAtIndex:(arc4random() % [array count])];
     EnergyBuster *eb = [[EnergyBuster alloc] init];
-    eb.title = [ebd objectForKey:@"Title"];
-    eb.description = [ebd objectForKey:@"Description"];
-    eb.choice = [ebd objectForKey:@"Choice"];
-    eb.graphicURL = [ebd objectForKey:@"Graphic URL"];
-    eb.eventName = [ebd objectForKey:@"Event Name"];
-    eb.savingsPerEvent = [[ebd objectForKey:@"Savings Per Event"] intValue];
-    eb.savingsPerMonth = [[ebd objectForKey:@"Savings Per Month"] intValue];
-    eb.setupCost = [[ebd objectForKey:@"Setup Cost"] intValue];
-    eb.setupTime = [[ebd objectForKey:@"Setup Time"] intValue];
-    eb.ongoingTime = [[ebd objectForKey:@"Ongoing Time"] intValue];
+    [eb loadDictionary:ebd];
     
     EnergyBusterViewController *ebvc = [[EnergyBusterViewController alloc] initWithNibName:@"EnergyBusterViewController" bundle:nil];
     
@@ -161,5 +152,15 @@
 - (NSUInteger)numberOfRecordsForPlot:(CPPlot *)plot {
     return 51;
 }
+
+- (void)tabView:(NSTabView *)tabView willSelectTabViewItem:(NSTabViewItem *)tabViewItem {
+    NSLog(@"Will select Tab#%d", [tabView indexOfTabViewItem:tabViewItem]);
+}
+
+- (void)tabView:(NSTabView *)tabView didSelectTabViewItem:(NSTabViewItem *)tabViewItem {
+    NSLog(@"Did select Tab#%d", [tabView indexOfTabViewItem:tabViewItem]);
+}
+
+
 
 @end

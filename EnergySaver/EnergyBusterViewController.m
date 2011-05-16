@@ -33,29 +33,29 @@
     
     self.energyBuster = eb;
     
-    NSLog(@"%@", [energyBuster title]);
+//    NSLog(@"%@", [energyBuster title]);
+//    NSLog(@"%@", [energyBuster description]);
+//    NSLog(@"%d", [energyBuster ongoingTime]);
+//    NSLog(@"%d", [energyBuster setupTime]);
+//    NSLog(@"%d", [energyBuster setupCost]);
+//    NSLog(@"%@", [energyBuster graphicURL]);
+//    NSLog(@"$%d.%d", monthlySavings/100, monthlySavings%100);
+//    NSLog(@"$%2d.%2d", annualSavings/100, annualSavings%100);
+
     [titleField setStringValue:[energyBuster title]];
-    NSLog(@"%@", [energyBuster description]);
     [descriptionField setStringValue:[energyBuster description]];
-    NSLog(@"%d", [energyBuster ongoingTime]);
-    [ongoingTimeField setStringValue:[NSString stringWithFormat:@"%d", [energyBuster ongoingTime]]];
-    NSLog(@"%d", [energyBuster setupTime]);
-    [setupTimeField setStringValue:[NSString stringWithFormat:@"%d", [energyBuster setupTime]]];
-    NSLog(@"%d", [energyBuster setupCost]);
-    [setupCostField setStringValue:[NSString stringWithFormat:@"%d", [energyBuster setupCost]]];
-    NSLog(@"%@", [energyBuster graphicURL]);
+    int ongoingTime = [energyBuster ongoingTime];
+    [ongoingTimeField setStringValue:[NSString stringWithFormat:@"%2d:%2d", ongoingTime/60, ongoingTime%60]];
+    int setupTime = [energyBuster setupTime];
+    [setupTimeField setStringValue:[NSString stringWithFormat:@"%2d:%2d", setupTime/3600, (setupTime/60)%60]];
+    int setupCost = [energyBuster setupCost]; 
+    [setupCostField setStringValue:[NSString stringWithFormat:@"$%2d.%2d", setupCost/100, setupCost%100]];
     NSImage *image = [[NSImage alloc] initWithContentsOfURL:[NSURL URLWithString:[energyBuster graphicURL]]];
-    
     [imageView setImage:image];
-    
     [image release];
-    
     int monthlySavings = [energyBuster savingsPerMonth];
-    NSLog(@"$%d.%d", monthlySavings/100, monthlySavings%100);
     [monthlySavingsField setStringValue:[NSString stringWithFormat:@"$%d.%d", monthlySavings/100, monthlySavings%100]];
-    
     int annualSavings = [energyBuster savingsPerYear];
-    NSLog(@"$%2d.%2d", annualSavings/100, annualSavings%100);
     [annualSavingsField setStringValue:[NSString stringWithFormat:@"$%2d.%2d", annualSavings/100, annualSavings%100]];
 }
 
@@ -101,19 +101,11 @@
     
     NSDictionary *ebd = [array objectAtIndex:(arc4random() % [array count])];
     EnergyBuster *eb = [[EnergyBuster alloc] init];
-    eb.title = [ebd objectForKey:@"Title"];
-    eb.description = [ebd objectForKey:@"Description"];
-    eb.choice = [ebd objectForKey:@"Choice"];
-    eb.graphicURL = [ebd objectForKey:@"Graphic URL"];
-    eb.eventName = [ebd objectForKey:@"Event Name"];
-    eb.savingsPerEvent = [[ebd objectForKey:@"Savings Per Event"] intValue];
-    eb.savingsPerMonth = [[ebd objectForKey:@"Savings Per Month"] intValue];
-    eb.setupCost = [[ebd objectForKey:@"Setup Cost"] intValue];
-    eb.setupTime = [[ebd objectForKey:@"Setup Time"] intValue];
-    eb.ongoingTime = [[ebd objectForKey:@"Ongoing Time"] intValue];
+    [eb loadDictionary:ebd];
     
     [self load:eb];
 }
+
 
 
 @end

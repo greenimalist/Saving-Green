@@ -9,7 +9,7 @@
 #import <Cocoa/Cocoa.h>
 #import <CorePlot/CorePlot.h>
 
-@interface EnergySaverAppDelegate : NSObject <NSApplicationDelegate, CPPlotDataSource> {
+@interface EnergySaverAppDelegate : NSObject <NSApplicationDelegate, CPPlotDataSource, NSTabViewDelegate> {
 @private
     NSWindow *window;
     
