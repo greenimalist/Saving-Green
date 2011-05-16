@@ -5,8 +5,6 @@
 	<key>EnergyBusterArray</key>
 	<array>
 		<dict>
-			<key>Choice</key>
-			<string>Later</string>
 			<key>Description</key>
 			<string>By using a space heater instead of central heating, you won&apos;t waste money heating the entire house when you only need heat for a small room.</string>
 			<key>Event Name</key>
