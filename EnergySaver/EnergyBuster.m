@@ -34,12 +34,20 @@
     [setupTimeField setStringValue:[eb objectForKey:@"Setup Time"]];
     NSLog(@"%@", [eb objectForKey:@"Setup Cost"]);
     [setupCostField setStringValue:[eb objectForKey:@"Setup Cost"]];
-/*    NSLog(@"%@", [eb objectForKey:@"Graphic URL"]);
+    NSLog(@"%@", [eb objectForKey:@"Graphic URL"]);
+    NSImage *image = [[NSImage alloc] initWithContentsOfURL:[NSURL URLWithString:[eb objectForKey:@"Graphic URL"]]];
     
-    NSImage *image = [[]];
+    [imageView setImage:image];
+
+    [image release];
     
-    [imageView setStringValue:[eb objectForKey:@"Graphic URL"]];
- */
+    int monthlySavings = [[eb objectForKey:@"Savings Per Month"] intValue];
+    NSLog(@"$%d.%d", monthlySavings/100, monthlySavings%100);
+    [monthlySavingsField setStringValue:[NSString stringWithFormat:@"$%d.%d", monthlySavings/100, monthlySavings%100]];
+    
+    int annualSavings = [[eb objectForKey:@"Savings Per Month"] intValue]*12;
+    NSLog(@"$%2d.%2d", annualSavings/100, annualSavings%100);
+    [annualSavingsField setStringValue:[NSString stringWithFormat:@"$%2d.%2d", annualSavings/100, annualSavings%100]];
 }
 
 - (IBAction)actNow:(id) sender {

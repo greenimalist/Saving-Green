@@ -16,13 +16,14 @@
     IBOutlet NSTextField *setupCostField;
     IBOutlet NSTextField *setupTimeField;
     IBOutlet NSTextField *ongoingTimeField;
+    IBOutlet NSImageView *imageView;
+    IBOutlet NSTextField *monthlySavingsField;
+    IBOutlet NSTextField *annualSavingsField;
     
     NSString *title;
     NSString *description; // how-to implement EnergyBuster
     NSString *choice; // Interested in trying? Yes, No, Later
     NSString *eventName;
-    
-    NSURL *graphicURL; // link to picture for each EnergyBuster
     
     int savingsPerEvent; // in cents
     int eventsPerMonth;
