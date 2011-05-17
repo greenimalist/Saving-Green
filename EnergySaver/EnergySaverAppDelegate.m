@@ -86,7 +86,7 @@
 }
 
 - (void)loadNextTab:(id)sender {
-    
+    cpvc.ebArray = ebvc.ebArray;
     [tabView selectNextTabViewItem:self];
 }
 

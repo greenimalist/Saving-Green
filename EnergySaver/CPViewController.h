@@ -22,8 +22,11 @@
 @interface CPViewController : NSViewController {
 
     IBOutlet CPLayerHostingView *cplhv;
+    NSMutableArray *ebArray;
 @private
     
 }
+
+@property (retain) NSMutableArray *ebArray;
 
 @end

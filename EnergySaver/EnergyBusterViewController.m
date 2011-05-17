@@ -56,18 +56,24 @@
     energyBuster.startDate = [NSDate date];
     [self archiveEnergyBusters];
     [self loadDailyRate];
+    NSSound *sound = [NSSound soundNamed:@"chaching"];
+    [sound play];
 }
 
 - (IBAction)actLater:(id) sender {
     energyBuster.choice = @"Later";
     [self archiveEnergyBusters];    
     [self selectNextEnergyBuster];
+    NSSound *sound = [NSSound soundNamed:@"rustle"];
+    [sound play];
 }
 
 - (IBAction)actNever:(id) sender {
     energyBuster.choice = @"No";
     [self archiveEnergyBusters]; 
     [self selectNextEnergyBuster];
+    NSSound *sound = [NSSound soundNamed:@"paperbag"];
+    [sound play];
 }
 
 - (void)loadDailyRate {

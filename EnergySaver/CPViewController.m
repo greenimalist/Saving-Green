@@ -11,6 +11,8 @@
 
 @implementation CPViewController
 
+@synthesize ebArray;
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -23,6 +25,7 @@
 
 - (void)dealloc
 {
+    [ebArray release];
     [super dealloc];
 }
 
