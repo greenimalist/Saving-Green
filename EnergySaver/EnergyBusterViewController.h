@@ -24,19 +24,19 @@
 
     EnergyBuster *energyBuster;
     NSMutableArray *ebArray;
-    NSArray *plistArray;
     
 @private
     
 }
 
 @property (retain) EnergyBuster *energyBuster;
-@property (retain) NSArray *plistArray;
+@property (retain) NSMutableArray *ebArray;
 
-- (void)load:(EnergyBuster *)eb;
 - (IBAction)actNow:(id) sender;
 - (IBAction)actLater:(id) sender;
 - (IBAction)actNever:(id) sender;
+
+- (void)load:(EnergyBuster *)eb;
 - (void)loadDailyRate;
 - (void)selectNextEnergyBuster;
 

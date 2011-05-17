@@ -10,8 +10,9 @@
 #import <CorePlot/CorePlot.h>
 #import "CorePlotTestController.h"
 //#import "EnergyBusterController.h"
-#import "EnergyBusterViewController.h"
+#import "EnergyBuster.h"
 #define PLISTURLSTRING @"http://www.greenimalist.com/energySaver/EnergyBusterList.plist"
+
 
 @interface EnergySaverAppDelegate ()
 - (void)createGraph;
@@ -52,13 +53,24 @@
     
     NSArray *array = [plistContents objectForKey:@"EnergyBusterArray"];
     
-    EnergyBusterViewController *ebvc = [[EnergyBusterViewController alloc] initWithNibName:@"EnergyBusterViewController" bundle:nil];
-
+    NSMutableArray *ebArray = [[NSMutableArray alloc] init];
+    
+    for (NSDictionary *ebd in array)
+    {
+        EnergyBuster *eb = [[EnergyBuster alloc] init];
+        [eb loadDictionary:ebd];
+        [ebArray addObject:eb];
+        [eb release];
+    } 
+    
+    ebvc = [[EnergyBusterViewController alloc] initWithNibName:@"EnergyBusterViewController" bundle:nil];
+    ebvc.ebArray = ebArray;
+    [ebArray release];
+    
     // force view to load so that we can show the first EnergyBuster
     [ebvc loadView];
-    ebvc.plistArray = array;
-    
-    NSTabView *tabView = (NSTabView *)[[[window contentView] subviews] lastObject];
+    EnergyBuster *eb = [ebArray objectAtIndex:(arc4random() % [ebArray count])];
+    [ebvc load:eb];
     
     [[[tabView tabViewItemAtIndex:0] view] addSubview:ebvc.view];
     [tabView selectFirstTabViewItem:self];
@@ -156,13 +168,17 @@
 }
 
 - (void)tabView:(NSTabView *)tabView willSelectTabViewItem:(NSTabViewItem *)tabViewItem {
-    NSLog(@"Will select Tab#%d", [tabView indexOfTabViewItem:tabViewItem]);
+//    NSLog(@"Will select Tab#%d", [tabView indexOfTabViewItem:tabViewItem]);
 }
 
 - (void)tabView:(NSTabView *)tabView didSelectTabViewItem:(NSTabViewItem *)tabViewItem {
-    NSLog(@"Did select Tab#%d", [tabView indexOfTabViewItem:tabViewItem]);
+//    NSLog(@"Did select Tab#%d", [tabView indexOfTabViewItem:tabViewItem]);
 }
 
+- (void)dealloc {
+    [ebvc release];
+    [super dealloc];
+}
 
 
 

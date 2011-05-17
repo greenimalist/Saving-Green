@@ -11,7 +11,7 @@
 
 @implementation EnergyBusterViewController
 
-@synthesize energyBuster, plistArray;
+@synthesize energyBuster, ebArray;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -23,28 +23,6 @@
     }
     
     return self;
-}
-
-- (void)setPlistArray:(NSArray *)pla {
-    if (plistArray != pla)
-    {
-        [plistArray release];
-        plistArray = [pla retain];
-    }
-    
-    ebArray = [[NSMutableArray alloc] init];
-    
-    for (NSDictionary *ebd in plistArray)
-    {
-        EnergyBuster *eb = [[EnergyBuster alloc] init];
-        [eb loadDictionary:ebd];
-        [ebArray addObject:eb];
-    } 
-    
-    NSLog(@"%@", ebArray);
-    
-    EnergyBuster *eb = [ebArray objectAtIndex:(arc4random() % [ebArray count])];
-    [self load:eb];
 }
 
 - (void)dealloc

@@ -8,6 +8,8 @@
 
 #import <Cocoa/Cocoa.h>
 #import <CorePlot/CorePlot.h>
+#import "EnergyBusterViewController.h"
+
 
 @interface EnergySaverAppDelegate : NSObject <NSApplicationDelegate, CPPlotDataSource, NSTabViewDelegate> {
 @private
@@ -15,6 +17,8 @@
     
     IBOutlet CPLayerHostingView *graphView;
     CPXYGraph *graph;
+    EnergyBusterViewController *ebvc;
+    IBOutlet NSTabView *tabView;
 }
 
 @property (assign) IBOutlet NSWindow *window;
