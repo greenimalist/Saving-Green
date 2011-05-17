@@ -72,12 +72,7 @@
 
 - (void)loadDailyRate {
     [self selectNextEnergyBuster];
-    [delegate loadNextTab];
-    /*
-    NSWindow *window = [(EnergySaverAppDelegate *)[[NSApplication sharedApplication] delegate] window];
-    NSTabView *tabView = (NSTabView *)[[[window contentView] subviews] lastObject];
-    [tabView selectTabViewItemAtIndex:1];
-     */
+    [delegate loadNextTab:self];
 }
 
 - (void)selectNextEnergyBuster {

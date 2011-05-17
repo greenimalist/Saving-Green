@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0E24A45C1382736300858A70 /* CPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E24A45A1382736300858A70 /* CPViewController.m */; };
 		0E24A45D1382736300858A70 /* CPViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0E24A45B1382736300858A70 /* CPViewController.xib */; };
+		0E24A45F1382795B00858A70 /* morgueFile in Resources */ = {isa = PBXBuildFile; fileRef = 0E24A45E1382795B00858A70 /* morgueFile */; };
 		0E81A8AD137E718300D9059A /* README in Resources */ = {isa = PBXBuildFile; fileRef = 0E81A8AC137E718300D9059A /* README */; };
 		0E81A8B1137E72E500D9059A /* EnergyBuster.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E81A8B0137E72E500D9059A /* EnergyBuster.m */; };
 		0E81A8C8137E7F2000D9059A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E81A8C7137E7F2000D9059A /* QuartzCore.framework */; };
@@ -75,6 +76,7 @@
 		0E24A4591382736300858A70 /* CPViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPViewController.h; sourceTree = "<group>"; };
 		0E24A45A1382736300858A70 /* CPViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPViewController.m; sourceTree = "<group>"; };
 		0E24A45B1382736300858A70 /* CPViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CPViewController.xib; sourceTree = "<group>"; };
+		0E24A45E1382795B00858A70 /* morgueFile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = morgueFile; sourceTree = "<group>"; };
 		0E81A8AC137E718300D9059A /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 		0E81A8AF137E72E500D9059A /* EnergyBuster.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnergyBuster.h; sourceTree = "<group>"; };
 		0E81A8B0137E72E500D9059A /* EnergyBuster.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnergyBuster.m; sourceTree = "<group>"; };
@@ -184,6 +186,7 @@
 			children = (
 				A9FA5673137E6B3000CC9474 /* EnergySaverAppDelegate.h */,
 				A9FA5674137E6B3000CC9474 /* EnergySaverAppDelegate.m */,
+				0E24A45E1382795B00858A70 /* morgueFile */,
 				0E910DFB1381527100395ABB /* EnergyBusterViewController.h */,
 				0E910DFC1381527100395ABB /* EnergyBusterViewController.m */,
 				0E910DFD1381527100395ABB /* EnergyBusterViewController.xib */,
@@ -330,6 +333,7 @@
 				0EAEBA91137EC2DF00968696 /* EnergyBusterList.plist in Resources */,
 				0E910DFF1381527200395ABB /* EnergyBusterViewController.xib in Resources */,
 				0E24A45D1382736300858A70 /* CPViewController.xib in Resources */,
+				0E24A45F1382795B00858A70 /* morgueFile in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
