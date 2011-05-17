@@ -11,7 +11,7 @@
 
 @implementation EnergyBusterViewController
 
-@synthesize energyBuster;
+@synthesize energyBuster, ebd;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {

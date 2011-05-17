@@ -11,6 +11,7 @@
 #import "CorePlotTestController.h"
 //#import "EnergyBusterController.h"
 #import "EnergyBusterViewController.h"
+#define PLISTURLSTRING @"http://www.greenimalist.com/energySaver/EnergyBusterList.plist"
 
 @interface EnergySaverAppDelegate ()
 - (void)createGraph;
@@ -36,12 +37,18 @@
 //    EnergyBusterController *controller = [EnergyBusterController shared];
 //    [EnergyBusterController shared];
     
-    
-    NSString *plistPath =
-    [[NSBundle mainBundle] pathForResource:@"EnergyBusterList"
-                                    ofType:@"plist"];
-    NSDictionary *plistContents =
-    [NSDictionary dictionaryWithContentsOfFile:plistPath];
+    NSURL *plistURL = [NSURL URLWithString:PLISTURLSTRING];
+    NSDictionary *plistContents = [NSDictionary dictionaryWithContentsOfURL:plistURL];
+
+    // Fall back to cache if download fails
+    if (plistContents == nil)
+    {
+        NSString *plistPath =
+        [[NSBundle mainBundle] pathForResource:@"EnergyBusterList"
+                                        ofType:@"plist"];
+        plistContents =
+        [NSDictionary dictionaryWithContentsOfFile:plistPath];
+    }
     
     NSArray *array = [plistContents objectForKey:@"EnergyBusterArray"];
     

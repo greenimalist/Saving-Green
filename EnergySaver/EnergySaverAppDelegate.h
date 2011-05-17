@@ -19,4 +19,6 @@
 
 @property (assign) IBOutlet NSWindow *window;
 
+- (void)testSerialization; // Testing EnergySaver's NSCoding 
+    
 @end
