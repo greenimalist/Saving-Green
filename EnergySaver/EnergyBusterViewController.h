@@ -36,7 +36,7 @@
 - (IBAction)actLater:(id) sender;
 - (IBAction)actNever:(id) sender;
 
-- (void)load:(EnergyBuster *)eb;
+- (void)updateFields;
 - (void)loadDailyRate;
 - (void)selectNextEnergyBuster;
 

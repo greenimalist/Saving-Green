@@ -92,6 +92,9 @@
 
 - (int)priority {
     // TODO: Come up with a better algorithm!
+    if ([choice isEqualToString:@"Yes"] || [choice isEqualToString:@"No"])
+        return 0;
+    
     return self.savingsPerYear;
 }
 

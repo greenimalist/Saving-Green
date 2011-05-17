@@ -69,8 +69,7 @@
     
     // force view to load so that we can show the first EnergyBuster
     [ebvc loadView];
-    EnergyBuster *eb = [ebArray objectAtIndex:(arc4random() % [ebArray count])];
-    [ebvc load:eb];
+    [ebvc selectNextEnergyBuster];
     
     [[[tabView tabViewItemAtIndex:0] view] addSubview:ebvc.view];
     [tabView selectFirstTabViewItem:self];
@@ -85,16 +84,17 @@
     //[graph applyTheme:theme]; 
     graphView.hostedLayer = graph;
     
-    graph.paddingTop = 40.0;
-    graph.paddingRight = 40.0;
-    graph.paddingBottom = 40.0;
+    graph.paddingTop = 5.0;
+    graph.paddingRight = 5.0;
+    graph.paddingBottom = 5.0;
+    graph.paddingLeft = 5.0;
     
-    float minimumValueForXAxis = -10;
-    float minimumValueForYAxis = -10;
+    float minimumValueForXAxis = -6;
+    float minimumValueForYAxis = -6;
     float majorIntervalLengthForX = 2;
     float majorIntervalLengthForY = 2;
-    float maximumValueForXAxis = 10;
-    float maximumValueForYAxis = 10;
+    float maximumValueForXAxis = 6;
+    float maximumValueForYAxis = 6;
     
     // Setup plot space
     CPXYPlotSpace *plotSpace = (CPXYPlotSpace *)graph.defaultPlotSpace;
@@ -180,6 +180,16 @@
     [super dealloc];
 }
 
-
+- (void)applicationWillTerminate:(NSNotification *)aNotification {
+    
+    // Making sure that state is saved
+    NSMutableArray *ebArray = ebvc.ebArray;
+    for (EnergyBuster *eb in ebArray)
+    {
+        NSLog(@"Title: %@", [eb title]);
+        NSLog(@"Choice: %@", [eb choice]);
+        NSLog(@"Date Implemented: %@", [eb startDate]);
+    }
+}
 
 @end

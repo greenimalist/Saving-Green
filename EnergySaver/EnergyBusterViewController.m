@@ -31,18 +31,7 @@
 }
 
 
-- (void)load:(EnergyBuster *)eb {
-    
-    self.energyBuster = eb;
-    
-//    NSLog(@"%@", [energyBuster title]);
-//    NSLog(@"%@", [energyBuster description]);
-//    NSLog(@"%d", [energyBuster ongoingTime]);
-//    NSLog(@"%d", [energyBuster setupTime]);
-//    NSLog(@"%d", [energyBuster setupCost]);
-//    NSLog(@"%@", [energyBuster graphicURL]);
-//    NSLog(@"$%d.%d", monthlySavings/100, monthlySavings%100);
-//    NSLog(@"$%2d.%2d", annualSavings/100, annualSavings%100);
+- (void)updateFields {
 
     [titleField setStringValue:[energyBuster title]];
     [descriptionField setStringValue:[energyBuster description]];
@@ -63,21 +52,19 @@
 }
 
 - (IBAction)actNow:(id) sender {
-    NSLog(@"Act Now!");
     energyBuster.choice = @"Yes";
+    energyBuster.startDate = [NSDate date];
     [self archiveEnergyBusters];
     [self loadDailyRate];
 }
 
 - (IBAction)actLater:(id) sender {
-    NSLog(@"Act Later!");
     energyBuster.choice = @"Later";
     [self archiveEnergyBusters];    
     [self selectNextEnergyBuster];
 }
 
 - (IBAction)actNever:(id) sender {
-    NSLog(@"Act Never!");
     energyBuster.choice = @"No";
     [self archiveEnergyBusters]; 
     [self selectNextEnergyBuster];
@@ -92,17 +79,26 @@
 }
 
 - (void)selectNextEnergyBuster {
-    // There's probably a better way to do this than repeat what the App Delegate did
     
-    EnergyBuster *eb = [ebArray objectAtIndex:(arc4random() % [ebArray count])];
+    // Have something to fall back on in case all
+    // energy busters have been picked
+    EnergyBuster *highestPriority = [ebArray objectAtIndex:(arc4random() % [ebArray count])];
     
-    [self load:eb];
+    for (EnergyBuster *eb in ebArray)
+    {
+        if ([eb priority] > [highestPriority priority])
+            highestPriority = eb;
+    }
+    
+    self.energyBuster = highestPriority;
+    
+    [self updateFields];
 }
 
 - (void)archiveEnergyBusters {
     
     NSString *archivePath = [NSTemporaryDirectory() stringByAppendingPathComponent:@"EnergySaverArray.archive"];
-    NSLog(@"%@",archivePath);
+    NSLog(@"%@", archivePath);
     
     [NSKeyedArchiver archiveRootObject:ebArray toFile:archivePath];
 }
