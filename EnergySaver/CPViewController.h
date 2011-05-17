@@ -8,21 +8,14 @@
 
 #import <Cocoa/Cocoa.h>
 #import <CorePlot/CorePlot.h>
-/*
- #import <CorePlot/CorePlot.h>
-#import "CorePlotTestController.h"
- IBOutlet CPLayerHostingView *graphView;
- CPXYGraph *graph;
- @interface EnergySaverAppDelegate ()
- - (void)createGraph;
 
-
-*/
-
-@interface CPViewController : NSViewController {
+@interface CPViewController : NSViewController <CPPlotDataSource> {
 
     IBOutlet CPLayerHostingView *cplhv;
+    CPXYGraph *graph;
+    
     NSMutableArray *ebArray;
+    
 @private
     
 }
