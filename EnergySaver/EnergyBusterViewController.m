@@ -11,7 +11,7 @@
 
 @implementation EnergyBusterViewController
 
-@synthesize energyBuster, ebArray;
+@synthesize energyBuster, ebArray, delegate;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -72,10 +72,12 @@
 
 - (void)loadDailyRate {
     [self selectNextEnergyBuster];
-    
+    [delegate loadNextTab];
+    /*
     NSWindow *window = [(EnergySaverAppDelegate *)[[NSApplication sharedApplication] delegate] window];
     NSTabView *tabView = (NSTabView *)[[[window contentView] subviews] lastObject];
     [tabView selectTabViewItemAtIndex:1];
+     */
 }
 
 - (void)selectNextEnergyBuster {

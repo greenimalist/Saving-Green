@@ -64,6 +64,7 @@
     } 
     
     ebvc = [[EnergyBusterViewController alloc] initWithNibName:@"EnergyBusterViewController" bundle:nil];
+    ebvc.delegate = self;
     ebvc.ebArray = ebArray;
     [ebArray release];
     
@@ -74,9 +75,9 @@
     [[[tabView tabViewItemAtIndex:0] view] addSubview:ebvc.view];
     [tabView selectFirstTabViewItem:self];
     
-    [self createGraph];
+//    [self createGraph];
 }
-
+/*
 - (void)createGraph {
     // Create graph from theme
     graph = [(CPXYGraph *)[CPXYGraph alloc] initWithFrame:CGRectZero];
@@ -166,7 +167,7 @@
 - (NSUInteger)numberOfRecordsForPlot:(CPPlot *)plot {
     return 51;
 }
-
+*/
 - (void)tabView:(NSTabView *)tabView willSelectTabViewItem:(NSTabViewItem *)tabViewItem {
 //    NSLog(@"Will select Tab#%d", [tabView indexOfTabViewItem:tabViewItem]);
 }
@@ -190,6 +191,10 @@
         NSLog(@"Choice: %@", [eb choice]);
         NSLog(@"Date Implemented: %@", [eb startDate]);
     }
+}
+
+- (void)loadNextTab {
+    [tabView selectNextTabViewItem:self];
 }
 
 @end

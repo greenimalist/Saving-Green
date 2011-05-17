@@ -24,6 +24,7 @@
 
     EnergyBuster *energyBuster;
     NSMutableArray *ebArray;
+    id delegate;
     
 @private
     
@@ -31,6 +32,7 @@
 
 @property (retain) EnergyBuster *energyBuster;
 @property (retain) NSMutableArray *ebArray;
+@property (assign) id delegate;
 
 - (IBAction)actNow:(id) sender;
 - (IBAction)actLater:(id) sender;
