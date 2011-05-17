@@ -15,12 +15,36 @@
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
+    NSLog(@"initWithNibName:bundle:");
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+
     if (self) {
-        // Initialization code here.
+
     }
     
     return self;
+}
+
+- (void)setPlistArray:(NSArray *)pla {
+    if (plistArray != pla)
+    {
+        [plistArray release];
+        plistArray = [pla retain];
+    }
+    
+    ebArray = [[NSMutableArray alloc] init];
+    
+    for (NSDictionary *ebd in plistArray)
+    {
+        EnergyBuster *eb = [[EnergyBuster alloc] init];
+        [eb loadDictionary:ebd];
+        [ebArray addObject:eb];
+    } 
+    
+    NSLog(@"%@", ebArray);
+    
+    EnergyBuster *eb = [ebArray objectAtIndex:(arc4random() % [ebArray count])];
+    [self load:eb];
 }
 
 - (void)dealloc
@@ -63,21 +87,21 @@
 - (IBAction)actNow:(id) sender {
     NSLog(@"Act Now!");
     energyBuster.choice = @"Yes";
-    
+    [self archiveEnergyBusters];
     [self loadDailyRate];
 }
 
 - (IBAction)actLater:(id) sender {
     NSLog(@"Act Later!");
     energyBuster.choice = @"Later";
-    
+    [self archiveEnergyBusters];    
     [self selectNextEnergyBuster];
 }
 
 - (IBAction)actNever:(id) sender {
     NSLog(@"Act Never!");
     energyBuster.choice = @"No";
-    
+    [self archiveEnergyBusters]; 
     [self selectNextEnergyBuster];
 }
 
@@ -92,14 +116,22 @@
 - (void)selectNextEnergyBuster {
     // There's probably a better way to do this than repeat what the App Delegate did
     
-    NSDictionary *ebd = [plistArray objectAtIndex:(arc4random() % [plistArray count])];
-    
-    EnergyBuster *eb = [[EnergyBuster alloc] init];
-    [eb loadDictionary:ebd];
+    EnergyBuster *eb = [ebArray objectAtIndex:(arc4random() % [ebArray count])];
     
     [self load:eb];
 }
 
+- (void)archiveEnergyBusters {
+    
+    NSString *archivePath = [NSTemporaryDirectory() stringByAppendingPathComponent:@"EnergySaverArray.archive"];
+    NSLog(@"%@",archivePath);
+    
+    [NSKeyedArchiver archiveRootObject:ebArray toFile:archivePath];
+}
+
+- (void)loadView {
+    [super loadView];
+}
 
 
 @end

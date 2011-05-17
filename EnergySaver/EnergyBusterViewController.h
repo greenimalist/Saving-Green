@@ -23,6 +23,7 @@
     IBOutlet NSTextField *eventNameField;
 
     EnergyBuster *energyBuster;
+    NSMutableArray *ebArray;
     NSArray *plistArray;
     
 @private
@@ -38,5 +39,7 @@
 - (IBAction)actNever:(id) sender;
 - (void)loadDailyRate;
 - (void)selectNextEnergyBuster;
+
+- (void)archiveEnergyBusters; // Archive the array of energy busters 
 
 @end

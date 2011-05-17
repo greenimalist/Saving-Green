@@ -52,16 +52,11 @@
     
     NSArray *array = [plistContents objectForKey:@"EnergyBusterArray"];
     
-    NSDictionary *ebd = [array objectAtIndex:(arc4random() % [array count])];
-    EnergyBuster *eb = [[EnergyBuster alloc] init];
-    [eb loadDictionary:ebd];
-    
     EnergyBusterViewController *ebvc = [[EnergyBusterViewController alloc] initWithNibName:@"EnergyBusterViewController" bundle:nil];
-    
+
     // force view to load so that we can show the first EnergyBuster
     [ebvc loadView];
     ebvc.plistArray = array;
-    [ebvc load:(EnergyBuster *) eb];
     
     NSTabView *tabView = (NSTabView *)[[[window contentView] subviews] lastObject];
     
@@ -69,7 +64,6 @@
     [tabView selectFirstTabViewItem:self];
     
     [self createGraph];
-    [self testSerialization];
 }
 
 - (void)createGraph {
@@ -169,29 +163,6 @@
     NSLog(@"Did select Tab#%d", [tabView indexOfTabViewItem:tabViewItem]);
 }
 
-- (void)testSerialization {
-    NSString *plistPath =
-    [[NSBundle mainBundle] pathForResource:@"EnergyBusterList"
-                                    ofType:@"plist"];
-    NSDictionary *plistContents =
-    [NSDictionary dictionaryWithContentsOfFile:plistPath];
-    
-    NSArray *array = [plistContents objectForKey:@"EnergyBusterArray"];
-    
-    NSMutableArray *archiveArray = [[NSMutableArray alloc] initWithCapacity:[array count]];
-    
-    for (NSDictionary *ebd in array)
-    {
-        EnergyBuster *eb = [[EnergyBuster alloc] init];
-        [eb loadDictionary:ebd];
-        [archiveArray addObject:eb];
-    } 
-
-    NSString *archivePath = [NSTemporaryDirectory() stringByAppendingPathComponent:@"EnergySaverArray.archive"];
-    NSLog(@"%@",archivePath);
-    
-    [NSKeyedArchiver archiveRootObject:archiveArray toFile:archivePath];
-}
 
 
 
