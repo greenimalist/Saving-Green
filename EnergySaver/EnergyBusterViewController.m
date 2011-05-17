@@ -45,9 +45,10 @@
     [titleField setStringValue:[energyBuster title]];
     [descriptionField setStringValue:[energyBuster description]];
     int ongoingTime = [energyBuster ongoingTime];
-    [ongoingTimeField setStringValue:[NSString stringWithFormat:@"%2d:%2d", ongoingTime/60, ongoingTime%60]];
+    [ongoingTimeField setStringValue:[NSString stringWithFormat:@"%2dmin:%2dsec", ongoingTime/60, ongoingTime%60]];
+    [eventNameField setStringValue:[NSString stringWithFormat:@"per %@", [energyBuster eventName]]];
     int setupTime = [energyBuster setupTime];
-    [setupTimeField setStringValue:[NSString stringWithFormat:@"%2d:%2d", setupTime/3600, (setupTime/60)%60]];
+    [setupTimeField setStringValue:[NSString stringWithFormat:@"%2dhr:%2dmin", setupTime/3600, (setupTime/60)%60]];
     int setupCost = [energyBuster setupCost]; 
     [setupCostField setStringValue:[NSString stringWithFormat:@"$%2d.%2d", setupCost/100, setupCost%100]];
     NSImage *image = [[NSImage alloc] initWithContentsOfURL:[NSURL URLWithString:[energyBuster graphicURL]]];
@@ -70,14 +71,14 @@
     NSLog(@"Act Later!");
     energyBuster.choice = @"Later";
     
-    [self loadDailyRate];
+    [self selectNextEnergyBuster];
 }
 
 - (IBAction)actNever:(id) sender {
     NSLog(@"Act Never!");
     energyBuster.choice = @"No";
     
-    [self loadDailyRate];
+    [self selectNextEnergyBuster];
 }
 
 - (void)loadDailyRate {

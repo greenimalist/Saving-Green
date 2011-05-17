@@ -20,6 +20,7 @@
     IBOutlet NSImageView *imageView;
     IBOutlet NSTextField *monthlySavingsField;
     IBOutlet NSTextField *annualSavingsField;
+    IBOutlet NSTextField *eventNameField;
 
     EnergyBuster *energyBuster;
     
