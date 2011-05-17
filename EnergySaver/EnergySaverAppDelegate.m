@@ -60,7 +60,7 @@
     
     // force view to load so that we can show the first EnergyBuster
     [ebvc loadView];
-    
+    ebvc.plistArray = array;
     [ebvc load:(EnergyBuster *) eb];
     
     NSTabView *tabView = (NSTabView *)[[[window contentView] subviews] lastObject];

@@ -40,6 +40,7 @@
 //- (int) totalSaved; // The amount of money saved in total, in cents
 
 - (void)loadDictionary:(NSDictionary *)ebd;
+- (int)priority; // The higher the priority, the earlier it will be shown
 
 @property (copy) NSString *title;
 @property (copy) NSString *description;

@@ -90,4 +90,10 @@
     [encoder encodeObject:startDate forKey:@"Start Date"];
 }
 
+- (int)priority {
+    // TODO: Come up with a better algorithm!
+    return self.savingsPerYear;
+}
+
+
 @end

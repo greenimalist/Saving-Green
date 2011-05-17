@@ -23,14 +23,14 @@
     IBOutlet NSTextField *eventNameField;
 
     EnergyBuster *energyBuster;
-    NSDictionary *ebd;
+    NSArray *plistArray;
     
 @private
     
 }
 
 @property (retain) EnergyBuster *energyBuster;
-@property (retain) NSDictionary *ebd;
+@property (retain) NSArray *plistArray;
 
 - (void)load:(EnergyBuster *)eb;
 - (IBAction)actNow:(id) sender;

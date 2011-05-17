@@ -11,7 +11,7 @@
 
 @implementation EnergyBusterViewController
 
-@synthesize energyBuster, ebd;
+@synthesize energyBuster, plistArray;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -92,15 +92,8 @@
 - (void)selectNextEnergyBuster {
     // There's probably a better way to do this than repeat what the App Delegate did
     
-    NSString *plistPath =
-    [[NSBundle mainBundle] pathForResource:@"EnergyBusterList"
-                                    ofType:@"plist"];
-    NSDictionary *plistContents =
-    [NSDictionary dictionaryWithContentsOfFile:plistPath];
+    NSDictionary *ebd = [plistArray objectAtIndex:(arc4random() % [plistArray count])];
     
-    NSArray *array = [plistContents objectForKey:@"EnergyBusterArray"];
-    
-    NSDictionary *ebd = [array objectAtIndex:(arc4random() % [array count])];
     EnergyBuster *eb = [[EnergyBuster alloc] init];
     [eb loadDictionary:ebd];
     
