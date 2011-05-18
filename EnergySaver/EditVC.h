@@ -9,13 +9,16 @@
 #import <Cocoa/Cocoa.h>
 
 
-@interface EditVC : NSViewController {
+@interface EditVC : NSViewController <NSTableViewDataSource, NSTableViewDelegate> {
     
     IBOutlet NSTableView *tableView;
+    NSMutableArray *ebArray;
     
 @private
     
 }
+
+@property (retain) NSMutableArray *ebArray;
 
 -(IBAction)toggleEdit:(id)sender;
 
