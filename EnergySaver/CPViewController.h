@@ -15,7 +15,8 @@
     CPXYGraph *graph;
     
     NSMutableArray *ebArray;
-    
+    NSArray *dataArray;
+    NSInteger numberOfDays;
 @private
     
 }

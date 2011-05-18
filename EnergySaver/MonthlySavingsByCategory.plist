@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Data</key>
+	<dict>
+		<key>Transportation</key>
+		<real>65</real>
+		<key>Lighting</key>
+		<real>215</real>
+		<key>Heating</key>
+		<integer>1500</integer>
+		<key>Cooling</key>
+		<integer>545</integer>
+		<key>Electronics</key>
+		<integer>350</integer>
+		<key>Laundry</key>
+		<integer>285</integer>
+		<key>Refrigeration</key>
+		<integer>125</integer>
+		<key>Cooking</key>
+		<integer>400</integer>
+	</dict>
+</dict>
+</plist>

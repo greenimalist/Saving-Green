@@ -1,18 +1,15 @@
 //
-//  CPViewController.m
+//  PieVC.m
 //  EnergySaver
 //
-//  Created by Aaron Lin on 5/17/11.
+//  Created by Aaron Lin on 5/18/11.
 //  Copyright 2011 __MyCompanyName__. All rights reserved.
 //
 
-#import "CPViewController.h"
-#import "Calendar.h"
+#import "PieVC.h"
 
 
-@implementation CPViewController
-
-@synthesize ebArray;
+@implementation PieVC
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -26,51 +23,17 @@
 
 - (void)dealloc
 {
-    [ebArray release];
     [super dealloc];
-}
-
-// CP Data Source
-
-- (NSUInteger)numberOfRecordsForPlot:(CPPlot *)plot {
-    return numberOfDays;
-}
-
-- (NSNumber *)numberForPlot:(CPPlot *)plot
-                field:(NSUInteger)fieldEnum
-                recordIndex:(NSUInteger)index {
-    
-    NSDictionary *entry = [dataArray objectAtIndex:index];
-    NSNumber *mySavings = [entry objectForKey:@"My Savings"];
-    NSNumber *averageSavings = [entry objectForKey:@"Average Savings"];
-    
-    if (fieldEnum == CPScatterPlotFieldX) {
-        return [NSNumber numberWithDouble:index];
-    }
-    else {
-        if (plot.identifier == @"My Savings Plot")
-            return mySavings;
-        else if (plot.identifier == @"Average Savings Plot")
-            return averageSavings;
-    else
-        return [NSNumber numberWithDouble:0.0];
-    }
 }
 
 - (void)viewDidLoad {
     
-    NSString *plistPath = [[NSBundle mainBundle] pathForResource:@"DailyRatePList" ofType:@"plist"];
+    NSString *plistPath = [[NSBundle mainBundle] pathForResource:@"MonthlySavingsByCategory" ofType:@"plist"];
     
-    NSDictionary *plist = [NSDictionary dictionaryWithContentsOfFile:plistPath];
-    dataArray = [[NSArray alloc] initWithArray:[plist objectForKey:@"Data"]];
+    categories = [[NSDictionary alloc] initWithContentsOfFile:plistPath];
     
-    NSDictionary *firstEntry = [dataArray objectAtIndex:0];
-    NSDate *firstDate = [firstEntry objectForKey:@"Date Implemented"];
-    NSDictionary *lastEntry = [dataArray lastObject];
-    NSDate *lastDate = [lastEntry objectForKey:@"Date Implemented"];
     
-    numberOfDays = [NSDate daysBetweenDate:firstDate andDate:lastDate];
-    
+    /*
     NSLog(@"Number of Days: %d", numberOfDays);
     
     double minY = 0.0;
@@ -82,7 +45,7 @@
         double averageSavings = [[d objectForKey:@"Average Savings"] doubleValue];
         maxY = MAX(MAX(maxY, mySavings), averageSavings);
     }
-        
+    
     graph = [[CPXYGraph alloc] initWithFrame:self.view.bounds];
     
     cplhv.hostedLayer = graph;
@@ -108,7 +71,7 @@
     axisSet.xAxis.axisLineStyle = lineStyle;
     axisSet.xAxis.minorTickLength = 5.0f;
     axisSet.xAxis.majorTickLength = 8.0f;
-//    axisSet.xAxis.axisLabelOffset = 3.0f;
+    //    axisSet.xAxis.axisLabelOffset = 3.0f;
     
     axisSet.yAxis.majorIntervalLength = CPDecimalFromDouble(5.0);
     axisSet.yAxis.minorTicksPerInterval = 4;
@@ -117,7 +80,7 @@
     axisSet.yAxis.axisLineStyle = lineStyle;
     axisSet.yAxis.minorTickLength = 5.0f;
     axisSet.yAxis.majorTickLength = 8.0f;
-//    axisSet.yAxis.axisLabelOffset = 3.0f;
+    //    axisSet.yAxis.axisLabelOffset = 3.0f;
     
     CPScatterPlot *mySavingsPlot = [[[CPScatterPlot alloc] initWithFrame:cplhv.frame] autorelease];
     mySavingsPlot.identifier = @"My Savings Plot";
@@ -138,11 +101,14 @@
     greenCirclePlotSymbol.fill = [CPFill fillWithColor:[CPColor greenColor]];
     greenCirclePlotSymbol.size = CGSizeMake(2.0, 2.0);
     averageSavingsPlot.plotSymbol = greenCirclePlotSymbol;
+     
+     */
     
 }
 - (void)loadView {
     [super loadView];
     [self viewDidLoad];
 }
+
 
 @end

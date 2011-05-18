@@ -9,6 +9,7 @@
 #import <Cocoa/Cocoa.h>
 #import "EnergyBusterViewController.h"
 #import "CPViewController.h"
+#import "PieVC.h"
 
 @interface EnergySaverAppDelegate : NSObject <NSApplicationDelegate, NSTabViewDelegate> {
 @private
@@ -17,6 +18,7 @@
     IBOutlet NSTabView *tabView;
     EnergyBusterViewController *ebvc;
     CPViewController *cpvc;
+    PieVC *pvc;
 }
 
 @property (assign) IBOutlet NSWindow *window;

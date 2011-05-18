@@ -57,6 +57,9 @@
     cpvc = [[CPViewController alloc] initWithNibName:@"CPViewController" bundle:nil];
     [[[tabView tabViewItemAtIndex:1] view] addSubview:cpvc.view];
     
+    pvc = [[PieVC alloc] initWithNibName:@"PieVC" bundle:nil];
+    [[[tabView tabViewItemAtIndex:2] view] addSubview:pvc.view];
+    
     [tabView selectFirstTabViewItem:self];
     
 }

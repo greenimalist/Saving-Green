@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Data</key>
+	<array>
+		<dict>
+			<key>Date Implemented</key>
+			<date>2011-05-18T00:49:48Z</date>
+			<key>My Savings</key>
+			<real>4.4</real>
+			<key>Average Savings</key>
+			<real>2.2</real>
+		</dict>
+		<dict>
+			<key>Date Implemented</key>
+			<date>2011-05-19T00:49:48Z</date>
+			<key>My Savings</key>
+			<real>5.5</real>
+			<key>Average Savings</key>
+			<real>2.4</real>
+		</dict>
+		<dict>
+			<key>Date Implemented</key>
+			<date>2011-05-20T00:49:48Z</date>
+			<key>My Savings</key>
+			<real>4.9</real>
+			<key>Average Savings</key>
+			<real>3.1</real>
+		</dict>
+		<dict>
+			<key>Date Implemented</key>
+			<date>2011-05-21T00:49:48Z</date>
+			<key>My Savings</key>
+			<real>6.9</real>
+			<key>Average Savings</key>
+			<real>3</real>
+		</dict>
+		<dict>
+			<key>Date Implemented</key>
+			<date>2011-05-22T00:49:48Z</date>
+			<key>My Savings</key>
+			<real>6.5</real>
+			<key>Average Savings</key>
+			<real>3.6</real>
+		</dict>
+		<dict>
+			<key>Date Implemented</key>
+			<date>2011-05-23T00:49:48Z</date>
+			<key>My Savings</key>
+			<real>6.5</real>
+			<key>Average Savings</key>
+			<real>3.5</real>
+		</dict>
+		<dict>
+			<key>Date Implemented</key>
+			<date>2011-05-24T00:49:48Z</date>
+			<key>My Savings</key>
+			<real>6.8</real>
+			<key>Average Savings</key>
+			<real>4</real>
+		</dict>
+		<dict>
+			<key>Date Implemented</key>
+			<date>2011-05-25T00:49:48Z</date>
+			<key>My Savings</key>
+			<real>7.1</real>
+			<key>Average Savings</key>
+			<real>3.9</real>
+		</dict>
+		<dict>
+			<key>Date Implemented</key>
+			<date>2011-05-26T00:49:48Z</date>
+			<key>My Savings</key>
+			<real>7.5</real>
+			<key>Average Savings</key>
+			<real>4.2</real>
+		</dict>
+		<dict>
+			<key>Date Implemented</key>
+			<date>2011-05-26T00:49:48Z</date>
+			<key>My Savings</key>
+			<real>8.1</real>
+			<key>Average Savings</key>
+			<real>4.4</real>
+		</dict>
+		<dict>
+			<key>Date Implemented</key>
+			<date>2011-05-27T00:49:48Z</date>
+			<key>My Savings</key>
+			<real>8.5</real>
+			<key>Average Savings</key>
+			<real>4.3</real>
+		</dict>
+		<dict>
+			<key>Date Implemented</key>
+			<date>2011-05-28T00:49:48Z</date>
+			<key>My Savings</key>
+			<real>11.4</real>
+			<key>Average Savings</key>
+			<real>4.5</real>
+		</dict>
+		<dict>
+			<key>Date Implemented</key>
+			<date>2011-05-29T00:49:48Z</date>
+			<key>My Savings</key>
+			<real>11</real>
+			<key>Average Savings</key>
+			<real>4.8</real>
+		</dict>
+		<dict>
+			<key>Date Implemented</key>
+			<date>2011-05-30T00:49:48Z</date>
+			<key>My Savings</key>
+			<real>12.1</real>
+			<key>Average Savings</key>
+			<real>4.9</real>
+		</dict>
+		<dict>
+			<key>Date Implemented</key>
+			<date>2011-05-31T00:49:48Z</date>
+			<key>My Savings</key>
+			<real>12.3</real>
+			<key>Average Savings</key>
+			<real>4.8</real>
+		</dict>
+		<dict>
+			<key>Date Implemented</key>
+			<date>2011-06-01T00:49:48Z</date>
+			<key>My Savings</key>
+			<real>15.2</real>
+			<key>Average Savings</key>
+			<integer>5</integer>
+		</dict>
+		<dict>
+			<key>Date Implemented</key>
+			<date>2011-06-02T00:49:48Z</date>
+			<key>My Savings</key>
+			<real>13.2</real>
+			<key>Average Savings</key>
+			<real>5.2</real>
+		</dict>
+		<dict>
+			<key>Date Implemented</key>
+			<date>2011-06-03T00:49:48Z</date>
+			<key>My Savings</key>
+			<real>14.5</real>
+			<key>Average Savings</key>
+			<real>4.9</real>
+		</dict>
+		<dict>
+			<key>Date Implemented</key>
+			<date>2011-06-04T00:49:48Z</date>
+			<key>My Savings</key>
+			<real>8.5</real>
+			<key>Average Savings</key>
+			<real>5.6</real>
+		</dict>
+	</array>
+</dict>
+</plist>

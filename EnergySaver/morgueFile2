@@ -1,0 +1,14 @@
+CPScatterPlot *xSquaredPlot = [[[CPScatterPlot alloc] initWithFrame:cplhv.frame] autorelease];
+xSquaredPlot.identifier = @"X Squared Plot";
+//    xSquaredPlot.dataLineStyle.lineWidth = 1.0f;
+//    xSquaredPlot.dataLineStyle.lineColor = [CPColor redColor];
+xSquaredPlot.dataSource = self;
+[graph addPlot:xSquaredPlot];
+
+CPScatterPlot *xInversePlot = [[[CPScatterPlot alloc] initWithFrame:cplhv.frame] autorelease];
+xInversePlot.identifier = @"X Inverse Plot";
+//    xInversePlot.dataLineStyle.lineWidth = 1.0f;
+//    xInversePlot.dataLineStyle.lineColor = [CPColor blueColor];
+xInversePlot.dataSource = self;
+[graph addPlot:xInversePlot];
+
