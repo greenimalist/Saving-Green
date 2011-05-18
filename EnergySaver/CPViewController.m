@@ -139,6 +139,8 @@
     greenCirclePlotSymbol.size = CGSizeMake(2.0, 2.0);
     averageSavingsPlot.plotSymbol = greenCirclePlotSymbol;
     
+//    CPTheme *theme = [CPTheme themeNamed:kCPStocksTheme];
+//    [graph applyTheme: theme];
 }
 - (void)loadView {
     [super loadView];

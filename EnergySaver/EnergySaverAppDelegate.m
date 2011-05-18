@@ -60,8 +60,11 @@
     pvc = [[PieVC alloc] initWithNibName:@"PieVC" bundle:nil];
     [[[tabView tabViewItemAtIndex:2] view] addSubview:pvc.view];
     
-    [tabView selectFirstTabViewItem:self];
     
+    bvc = [[BarVC alloc] initWithNibName:@"BarVC" bundle:nil];
+    [[[tabView tabViewItemAtIndex:3] view] addSubview:bvc.view];
+    
+    [tabView selectFirstTabViewItem:self];
 }
 - (void)tabView:(NSTabView *)tabView willSelectTabViewItem:(NSTabViewItem *)tabViewItem {
 //    NSLog(@"Will select Tab#%d", [tabView indexOfTabViewItem:tabViewItem]);
@@ -77,15 +80,15 @@
 }
 
 - (void)applicationWillTerminate:(NSNotification *)aNotification {
-    
-    // Making sure that state is saved
-    NSMutableArray *ebArray = ebvc.ebArray;
-    for (EnergyBuster *eb in ebArray)
-    {
-        NSLog(@"Title: %@", [eb title]);
-        NSLog(@"Choice: %@", [eb choice]);
-        NSLog(@"Date Implemented: %@", [eb startDate]);
-    }
+//    
+//    // Making sure that state is saved
+//    NSMutableArray *ebArray = ebvc.ebArray;
+//    for (EnergyBuster *eb in ebArray)
+//    {
+//        NSLog(@"Title: %@", [eb title]);
+//        NSLog(@"Choice: %@", [eb choice]);
+//        NSLog(@"Date Implemented: %@", [eb startDate]);
+//    }
 }
 
 - (void)loadNextTab:(id)sender {

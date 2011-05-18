@@ -10,6 +10,7 @@
 #import "EnergyBusterViewController.h"
 #import "CPViewController.h"
 #import "PieVC.h"
+#import "BarVC.h"
 
 @interface EnergySaverAppDelegate : NSObject <NSApplicationDelegate, NSTabViewDelegate> {
 @private
@@ -19,6 +20,7 @@
     EnergyBusterViewController *ebvc;
     CPViewController *cpvc;
     PieVC *pvc;
+    BarVC *bvc;
 }
 
 @property (assign) IBOutlet NSWindow *window;

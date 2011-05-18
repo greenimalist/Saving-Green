@@ -1,5 +1,5 @@
 //
-//  PieVC.h
+//  BarVC.h
 //  EnergySaver
 //
 //  Created by Aaron Lin on 5/18/11.
@@ -10,13 +10,13 @@
 #import <CorePlot/CorePlot.h>
 
 
-@interface PieVC : NSViewController <CPPieChartDataSource> {
-    
+@interface BarVC : NSViewController <CPPlotDataSource> {
+
     IBOutlet CPLayerHostingView *cplhv;
-    NSDictionary *categories;
+    NSArray *dataArray;
     CPXYGraph *graph;
     NSArray *allKeys;
-    
+
 @private
     
 }

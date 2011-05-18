@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Data</key>
+	<array>
+		<dict>
+			<key>January</key>
+			<string>50</string>
+		</dict>
+		<dict>
+			<key>February</key>
+			<string>60</string>
+		</dict>
+		<dict>
+			<key>March</key>
+			<string>35</string>
+		</dict>
+		<dict>
+			<key>April</key>
+			<string>75</string>
+		</dict>
+		<dict>
+			<key>May</key>
+			<string>85</string>
+		</dict>
+		<dict>
+			<key>June</key>
+			<string>80</string>
+		</dict>
+		<dict>
+			<key>July</key>
+			<string>90</string>
+		</dict>
+		<dict>
+			<key>August</key>
+			<string>95</string>
+		</dict>
+		<dict>
+			<key>September</key>
+			<string>110</string>
+		</dict>
+		<dict>
+			<key>October</key>
+			<string>180</string>
+		</dict>
+		<dict>
+			<key>November</key>
+			<string>150</string>
+		</dict>
+		<dict>
+			<key>December</key>
+			<string>150</string>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -22,6 +22,9 @@
 		0E8E783013836810007CA7DF /* MonthlySavingsByCategory.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0E8E782F1383680F007CA7DF /* MonthlySavingsByCategory.plist */; };
 		0E8E783413836C77007CA7DF /* PieVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E8E783213836C74007CA7DF /* PieVC.m */; };
 		0E8E783513836C77007CA7DF /* PieVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0E8E783313836C75007CA7DF /* PieVC.xib */; };
+		0E8E783913838556007CA7DF /* BarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E8E783713838553007CA7DF /* BarVC.m */; };
+		0E8E783A13838556007CA7DF /* BarVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0E8E783813838555007CA7DF /* BarVC.xib */; };
+		0E8E783C138389B2007CA7DF /* MonthlySavingsTotal.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0E8E783B138389B2007CA7DF /* MonthlySavingsTotal.plist */; };
 		0E910DFE1381527200395ABB /* EnergyBusterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E910DFC1381527100395ABB /* EnergyBusterViewController.m */; };
 		0E910DFF1381527200395ABB /* EnergyBusterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0E910DFD1381527100395ABB /* EnergyBusterViewController.xib */; };
 		0EAEBA91137EC2DF00968696 /* EnergyBusterList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0EAEBA90137EC2DF00968696 /* EnergyBusterList.plist */; };
@@ -101,6 +104,10 @@
 		0E8E783113836C73007CA7DF /* PieVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PieVC.h; sourceTree = "<group>"; };
 		0E8E783213836C74007CA7DF /* PieVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PieVC.m; sourceTree = "<group>"; };
 		0E8E783313836C75007CA7DF /* PieVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PieVC.xib; sourceTree = "<group>"; };
+		0E8E783613838552007CA7DF /* BarVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BarVC.h; sourceTree = "<group>"; };
+		0E8E783713838553007CA7DF /* BarVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarVC.m; sourceTree = "<group>"; };
+		0E8E783813838555007CA7DF /* BarVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BarVC.xib; sourceTree = "<group>"; };
+		0E8E783B138389B2007CA7DF /* MonthlySavingsTotal.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MonthlySavingsTotal.plist; sourceTree = "<group>"; };
 		0E910DFB1381527100395ABB /* EnergyBusterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnergyBusterViewController.h; sourceTree = "<group>"; };
 		0E910DFC1381527100395ABB /* EnergyBusterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnergyBusterViewController.m; sourceTree = "<group>"; };
 		0E910DFD1381527100395ABB /* EnergyBusterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EnergyBusterViewController.xib; sourceTree = "<group>"; };
@@ -219,6 +226,9 @@
 				0E8E783113836C73007CA7DF /* PieVC.h */,
 				0E8E783213836C74007CA7DF /* PieVC.m */,
 				0E8E783313836C75007CA7DF /* PieVC.xib */,
+				0E8E783613838552007CA7DF /* BarVC.h */,
+				0E8E783713838553007CA7DF /* BarVC.m */,
+				0E8E783813838555007CA7DF /* BarVC.xib */,
 				0E81A8AF137E72E500D9059A /* EnergyBuster.h */,
 				0E81A8B0137E72E500D9059A /* EnergyBuster.m */,
 				A9FA5676137E6B3100CC9474 /* MainMenu.xib */,
@@ -231,6 +241,7 @@
 			isa = PBXGroup;
 			children = (
 				0E8E782313834D7E007CA7DF /* DailyRatePList.plist */,
+				0E8E783B138389B2007CA7DF /* MonthlySavingsTotal.plist */,
 				0E8E782F1383680F007CA7DF /* MonthlySavingsByCategory.plist */,
 				0E24A460138280AB00858A70 /* paperbag.wav */,
 				0E24A461138280AB00858A70 /* chaching.wav */,
@@ -372,6 +383,8 @@
 				0E8E782C1383595F007CA7DF /* morgueFile2 in Resources */,
 				0E8E783013836810007CA7DF /* MonthlySavingsByCategory.plist in Resources */,
 				0E8E783513836C77007CA7DF /* PieVC.xib in Resources */,
+				0E8E783A13838556007CA7DF /* BarVC.xib in Resources */,
+				0E8E783C138389B2007CA7DF /* MonthlySavingsTotal.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,6 +427,7 @@
 				0E24A45C1382736300858A70 /* CPViewController.m in Sources */,
 				0E8E782A1383547E007CA7DF /* Calendar.m in Sources */,
 				0E8E783413836C77007CA7DF /* PieVC.m in Sources */,
+				0E8E783913838556007CA7DF /* BarVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
