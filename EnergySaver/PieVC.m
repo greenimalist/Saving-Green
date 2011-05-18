@@ -11,6 +11,8 @@
 
 @implementation PieVC
 
+@synthesize graph, pieData;
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -31,6 +33,31 @@
     NSString *plistPath = [[NSBundle mainBundle] pathForResource:@"MonthlySavingsByCategory" ofType:@"plist"];
     
     categories = [[NSDictionary alloc] initWithContentsOfFile:plistPath];
+    
+    for (NSString *key in categories)
+    {
+        NSLog(@"%@", [categories objectForKey:key]);
+    }
+    
+    // Sample Code
+    
+    graph = [[CPXYGraph alloc] initWithFrame: self.view.bounds];
+    cplhv.hostedLayer = graph;
+    
+    CPPieChart *pieChart = [[CPPieChart alloc] init];
+    pieChart.dataSource = self;
+    pieChart.pieRadius = 100.0;
+    pieChart.identifier = @"PieChart1";
+    pieChart.startAngle = M_PI_4;
+    pieChart.sliceDirection = CPPieDirectionCounterClockwise;
+    
+    self.pieData = [NSMutableArray arrayWithObjects:[NSNumber numberWithDouble:90.0], 
+                    [NSNumber numberWithDouble:20.0],
+                    [NSNumber numberWithDouble:30.0],
+                    [NSNumber numberWithDouble:40.0],
+                    [NSNumber numberWithDouble:50.0], [NSNumber numberWithDouble:60.0], nil];
+    [graph addPlot:pieChart];
+    [pieChart release];
     
     
     /*
@@ -101,14 +128,25 @@
     greenCirclePlotSymbol.fill = [CPFill fillWithColor:[CPColor greenColor]];
     greenCirclePlotSymbol.size = CGSizeMake(2.0, 2.0);
     averageSavingsPlot.plotSymbol = greenCirclePlotSymbol;
-     
      */
-    
+         
 }
 - (void)loadView {
     [super loadView];
     [self viewDidLoad];
 }
 
+
+// Data Source Methods
+
+- (NSUInteger)numberOfRecordsForPlot:(CPPlot *)plot {
+    return [self.pieData count];
+}
+
+- (NSNumber *)numberForPlot:(CPPlot *)plot
+                      field:(NSUInteger)fieldEnum
+                recordIndex:(NSUInteger)index {
+    return [self.pieData objectAtIndex:index];
+}
 
 @end

@@ -14,9 +14,14 @@
     
     IBOutlet CPLayerHostingView *cplhv;
     NSDictionary *categories;
+    CPXYGraph *graph;
+    NSMutableArray *pieData;
     
 @private
     
 }
+
+@property (retain) NSMutableArray *pieData;
+@property (retain) CPXYGraph *graph;
 
 @end
