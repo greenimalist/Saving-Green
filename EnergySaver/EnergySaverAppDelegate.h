@@ -11,6 +11,7 @@
 #import "CPViewController.h"
 #import "PieVC.h"
 #import "BarVC.h"
+#import "EditVC.h"
 
 @interface EnergySaverAppDelegate : NSObject <NSApplicationDelegate, NSTabViewDelegate> {
 @private
@@ -21,6 +22,7 @@
     CPViewController *cpvc;
     PieVC *pvc;
     BarVC *bvc;
+    EditVC *evc;
 }
 
 @property (assign) IBOutlet NSWindow *window;

@@ -28,6 +28,8 @@
 		0E910DFE1381527200395ABB /* EnergyBusterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E910DFC1381527100395ABB /* EnergyBusterViewController.m */; };
 		0E910DFF1381527200395ABB /* EnergyBusterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0E910DFD1381527100395ABB /* EnergyBusterViewController.xib */; };
 		0EAEBA91137EC2DF00968696 /* EnergyBusterList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0EAEBA90137EC2DF00968696 /* EnergyBusterList.plist */; };
+		0EB7DC6E1383B9DF00A198D7 /* EditVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EB7DC6C1383B9DF00A198D7 /* EditVC.m */; };
+		0EB7DC6F1383B9DF00A198D7 /* EditVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0EB7DC6D1383B9DF00A198D7 /* EditVC.xib */; };
 		A9391FAD137EAE11007B4F72 /* CorePlot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9391FAC137EAE11007B4F72 /* CorePlot.framework */; };
 		A9FA5662137E6B3000CC9474 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9FA5661137E6B3000CC9474 /* Cocoa.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		A9FA566C137E6B3000CC9474 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A9FA566A137E6B3000CC9474 /* InfoPlist.strings */; };
@@ -112,6 +114,9 @@
 		0E910DFC1381527100395ABB /* EnergyBusterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnergyBusterViewController.m; sourceTree = "<group>"; };
 		0E910DFD1381527100395ABB /* EnergyBusterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EnergyBusterViewController.xib; sourceTree = "<group>"; };
 		0EAEBA90137EC2DF00968696 /* EnergyBusterList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = EnergyBusterList.plist; sourceTree = "<group>"; };
+		0EB7DC6B1383B9DF00A198D7 /* EditVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditVC.h; sourceTree = "<group>"; };
+		0EB7DC6C1383B9DF00A198D7 /* EditVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditVC.m; sourceTree = "<group>"; };
+		0EB7DC6D1383B9DF00A198D7 /* EditVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EditVC.xib; sourceTree = "<group>"; };
 		A9391EBF137EA1D5007B4F72 /* CorePlot.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CorePlot.xcodeproj; path = CorePlotSource/framework/CorePlot.xcodeproj; sourceTree = "<group>"; };
 		A9391FAC137EAE11007B4F72 /* CorePlot.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CorePlot.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9FA565D137E6B3000CC9474 /* EnergySaver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EnergySaver.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -229,6 +234,9 @@
 				0E8E783613838552007CA7DF /* BarVC.h */,
 				0E8E783713838553007CA7DF /* BarVC.m */,
 				0E8E783813838555007CA7DF /* BarVC.xib */,
+				0EB7DC6B1383B9DF00A198D7 /* EditVC.h */,
+				0EB7DC6C1383B9DF00A198D7 /* EditVC.m */,
+				0EB7DC6D1383B9DF00A198D7 /* EditVC.xib */,
 				0E81A8AF137E72E500D9059A /* EnergyBuster.h */,
 				0E81A8B0137E72E500D9059A /* EnergyBuster.m */,
 				A9FA5676137E6B3100CC9474 /* MainMenu.xib */,
@@ -385,6 +393,7 @@
 				0E8E783513836C77007CA7DF /* PieVC.xib in Resources */,
 				0E8E783A13838556007CA7DF /* BarVC.xib in Resources */,
 				0E8E783C138389B2007CA7DF /* MonthlySavingsTotal.plist in Resources */,
+				0EB7DC6F1383B9DF00A198D7 /* EditVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,6 +437,7 @@
 				0E8E782A1383547E007CA7DF /* Calendar.m in Sources */,
 				0E8E783413836C77007CA7DF /* PieVC.m in Sources */,
 				0E8E783913838556007CA7DF /* BarVC.m in Sources */,
+				0EB7DC6E1383B9DF00A198D7 /* EditVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

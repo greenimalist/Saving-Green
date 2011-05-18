@@ -64,6 +64,9 @@
     bvc = [[BarVC alloc] initWithNibName:@"BarVC" bundle:nil];
     [[[tabView tabViewItemAtIndex:3] view] addSubview:bvc.view];
     
+    evc = [[EditVC alloc] initWithNibName:@"EditVC" bundle:nil];
+    [[[tabView tabViewItemAtIndex:4] view] addSubview:evc.view];
+    
     [tabView selectFirstTabViewItem:self];
 }
 - (void)tabView:(NSTabView *)tabView willSelectTabViewItem:(NSTabViewItem *)tabViewItem {
